@@ -1,0 +1,3 @@
+[submodule "Packages/friflo.friflo-ecs-unity"]
+	path = Packages/friflo.friflo-ecs-unity
+	url = https://github.com/KrebiGames/friflo-ecs-unity.git

@@ -1,5 +1,7 @@
 {
   "dependencies": {
+    "com.kurobon.friflo_ecs_unity_entity_visualize": "https://github.com/kurobon-jp/FrifloECS.Unity.EntityVisualize.git?path=Assets/FrifloECS.Unity.EntityVisualize/",
+    "com.unity.ide.visualstudio": "2.0.28",
     "com.unity.inputsystem": "1.20.1",
     "com.unity.render-pipelines.universal": "17.6.0",
     "com.unity.ugui": "2.6.0",

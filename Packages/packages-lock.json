@@ -1,5 +1,12 @@
 {
   "dependencies": {
+    "com.kurobon.friflo_ecs_unity_entity_visualize": {
+      "version": "https://github.com/kurobon-jp/FrifloECS.Unity.EntityVisualize.git?path=Assets/FrifloECS.Unity.EntityVisualize/",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "1fd738feeb138921d0fe835cab5761955926ad5a"
+    },
     "com.unity.burst": {
       "version": "2.0.0",
       "depth": 2,
@@ -19,7 +26,7 @@
     },
     "com.unity.ext.nunit": {
       "version": "2.1.0",
-      "depth": 4,
+      "depth": 2,
       "source": "builtin",
       "dependencies": {}
     },
@@ -28,6 +35,15 @@
       "depth": 2,
       "source": "builtin",
       "dependencies": {}
+    },
+    "com.unity.ide.visualstudio": {
+      "version": "2.0.28",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.test-framework": "1.1.33"
+      },
+      "url": "https://packages.unity.com"
     },
     "com.unity.inputsystem": {
       "version": "1.20.1",
@@ -100,7 +116,7 @@
     },
     "com.unity.test-framework": {
       "version": "1.8.0",
-      "depth": 3,
+      "depth": 1,
       "source": "builtin",
       "dependencies": {
         "com.unity.ext.nunit": "2.1.0",
@@ -128,6 +144,12 @@
         "com.unity.modules.physics2d": "1.0.0",
         "com.unity.modules.physics": "1.0.0"
       }
+    },
+    "friflo.friflo-ecs-unity": {
+      "version": "file:friflo.friflo-ecs-unity",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
     },
     "com.unity.modules.adaptiveperformance": {
       "version": "1.0.0",
