@@ -1,0 +1,20 @@
+{
+    "name": "Deges.UI",
+    "rootNamespace": "Deges.UI",
+    "references": [
+        "Nodus.ECS",
+        "Nodus.Navigation",
+        "Nodus.UI",
+        "Unity.ResourceManager",
+        "Unity.Localization"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

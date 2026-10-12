@@ -1,0 +1,24 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <Style src="../Styles.uss" />
+    <ui:VisualElement name="App" class="nodus-root deges-app">
+        <ui:VisualElement name="Toolbar" class="nodus-toolbar deges-toolbar">
+            <ui:Label text="Infrastructure" class="nodus-toolbar__brand" />
+            <ui:VisualElement class="nodus-toolbar__items">
+                <ui:Button name="BackButton" text="" tooltip="Back" class="nodus-button deges-icon-button" />
+                <ui:Button name="ForwardButton" text="" tooltip="Forward" class="nodus-button deges-icon-button" />
+                <ui:Button name="OpenFeedbackButton" text="Feedback" class="nodus-button nodus-button--primary" />
+            </ui:VisualElement>
+            <ui:VisualElement class="deges-toolbar-settings">
+                <ui:VisualElement class="deges-select-wrap deges-select-wrap--language">
+                    <ui:DropdownField name="LanguageDropdown" tooltip="Language" class="deges-select" />
+                    <ui:Label text="" class="deges-select-icon" picking-mode="Ignore" />
+                </ui:VisualElement>
+                <ui:VisualElement class="deges-select-wrap deges-select-wrap--theme">
+                    <ui:DropdownField name="ThemeDropdown" tooltip="Theme" class="deges-select" />
+                    <ui:Label text="" class="deges-select-icon" picking-mode="Ignore" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="Panels" class="deges-stack" picking-mode="Ignore" />
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e60a6a378938d561e59a00280adf2f5a, type: 3}
+  m_Name: MoreanLightTheme
+  m_EditorClassIdentifier: Nodus.UI::Nodus.UI.ThemeProfile
+  id: MoreanLightTheme
+  Theme: {fileID: -4733365628477956816, guid: 2697891752a55c549b07cd305d1ce036, type: 3}
+  Font: {fileID: 11400000, guid: 9ffeef19a9af30a49a1d9c996df3b101, type: 2}
+  Primary: {r: 0.137, g: 0.608, b: 0.827, a: 1}
+  PrimaryDark: {r: 0.086, g: 0.49, b: 0.718, a: 1}
+  PrimarySoft: {r: 0.882, g: 0.953, b: 0.984, a: 1}
+  Surface: {r: 1, g: 1, b: 1, a: 1}
+  SurfaceMuted: {r: 0.941, g: 0.961, b: 0.973, a: 1}
+  Text: {r: 0.145, g: 0.216, b: 0.275, a: 1}
+  TextMuted: {r: 0.431, g: 0.494, b: 0.529, a: 1}
+  Border: {r: 0.824, g: 0.871, b: 0.898, a: 1}
+  Danger: {r: 0.784, g: 0.208, b: 0.267, a: 1}
+  TextSmall: 12
+  TextBody: 14
+  TextTitle: 20
+  Radius: 12
+  Spacing: 8

@@ -1,3 +1,12 @@
 [submodule "Packages/friflo.friflo-ecs-unity"]
 	path = Packages/friflo.friflo-ecs-unity
 	url = https://github.com/KrebiGames/friflo-ecs-unity.git
+[submodule "Packages/com.nodus.navigation"]
+	path = Packages/com.nodus.navigation
+	url = https://github.com/MoreanGmbH/Nodus.Navigation.git
+[submodule "Packages/com.nodus.ui"]
+	path = Packages/com.nodus.ui
+	url = https://github.com/MoreanGmbH/Nodus.UI.git
+[submodule "Packages/com.nodus.ecs"]
+	path = Packages/com.nodus.ecs
+	url = https://github.com/MoreanGmbH/Nodus.ECS.git

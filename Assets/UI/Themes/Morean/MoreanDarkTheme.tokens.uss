@@ -1,0 +1,16 @@
+:root, .nodus-root {
+    --nodus-primary: #58B8EDFF;
+    --nodus-primary-dark: #2387BCFF;
+    --nodus-primary-soft: #24475BFF;
+    --nodus-surface: #17232DFF;
+    --nodus-surface-muted: #243540FF;
+    --nodus-text: #F1F6FAFF;
+    --nodus-text-muted: #A9BBC7FF;
+    --nodus-border: #425764FF;
+    --nodus-danger: #F27080FF;
+    --nodus-font-small: 12px;
+    --nodus-font-body: 14px;
+    --nodus-font-title: 20px;
+    --nodus-radius: 12px;
+    --nodus-space: 8px;
+}
