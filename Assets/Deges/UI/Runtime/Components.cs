@@ -10,6 +10,5 @@ namespace Deges.UI {
     [ComponentKey(null)]
     public struct BoundUIRoot : IComponent {
         public VisualElement Root;
-        public bool LocaleBound;
     }
 }

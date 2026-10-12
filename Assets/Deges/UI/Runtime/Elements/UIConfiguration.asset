@@ -15,10 +15,10 @@ MonoBehaviour:
   Themes:
   - {fileID: 11400000, guid: 90bd8bdeb5c402a44bd43e276c9abfd5, type: 2}
   - {fileID: 11400000, guid: f6235af4b515d754cb7704cdb8b6f1f0, type: 2}
+  Views:
+  - {fileID: 9197481963319205126, guid: 35bf7ee41de8b264587e46da591bec5e, type: 3}
+  - {fileID: 9197481963319205126, guid: 4dd63a00b62b97646a64fe87bc506a01, type: 3}
   Stacks:
   - Id: Main
     ContainerName: Panels
     Presentation: 0
-  views:
-  - {fileID: 11400000, guid: b02df2303934aaa4b9435f3a31fc82bc, type: 2}
-  - {fileID: 11400000, guid: 8112a6cc4bbfe044aa2a0ed7871c17cf, type: 2}

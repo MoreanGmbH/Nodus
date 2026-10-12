@@ -1,7 +1,7 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:loc="UnityEngine.Localization">
-    <Style src="../../Styles.uss" />
-    <ui:VisualElement name="FeedbackPanel" class="nodus-panel deges-feedback">
-        <ui:VisualElement class="deges-feedback-heading">
+    <Style src="../Styles.uss" />
+    <ui:VisualElement name="FeedbackPanel" class="nodus-panel nodus-feedback">
+        <ui:VisualElement class="nodus-feedback__heading">
             <ui:Label text="Feedback" class="nodus-panel__title">
                 <Bindings>
                     <loc:LocalizedString property="text" table="MainTable" entry="Feedback.Title" />
@@ -18,7 +18,7 @@
                 <loc:LocalizedString property="text" table="MainTable" entry="Feedback.Description" />
             </Bindings>
         </ui:Label>
-        <ui:TextField name="FeedbackMessage" label="Your comment" multiline="true" class="deges-feedback-text">
+        <ui:TextField name="FeedbackMessage" label="Your comment" multiline="true" class="nodus-feedback__text">
             <Bindings>
                 <loc:LocalizedString property="label" table="MainTable" entry="Feedback.MessageLabel" />
             </Bindings>

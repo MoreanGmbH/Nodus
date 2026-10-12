@@ -1,28 +1,32 @@
-<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
-    <Style src="project://database/Assets/Deges/UI/Runtime/Elements/Styles.uss?fileID=7433441132597879392&amp;guid=a64a3905c8a435845a8377002c55e1ed&amp;type=3#Styles"/>
-    <ui:VisualElement name="App" class="nodus-root deges-app">
-        <ui:VisualElement name="Toolbar" class="nodus-toolbar deges-toolbar">
-            <ui:Label text="Infrastructure" class="nodus-toolbar__brand"/>
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:loc="UnityEngine.Localization">
+    <Style src="../Styles.uss" />
+    <ui:VisualElement name="App" class="nodus-root">
+        <ui:VisualElement name="Toolbar" class="nodus-toolbar nodus-toolbar--responsive">
+            <ui:Label text="Infrastructure" class="nodus-toolbar__brand">
+                <Bindings>
+                    <loc:LocalizedString property="text" table="MainTable" entry="Project.Title" />
+                </Bindings>
+            </ui:Label>
             <ui:VisualElement class="nodus-toolbar__items">
-                <ui:Button name="BackButton" text="" tooltip="Back" class="nodus-button deges-icon-button"/>
-                <ui:Button name="ForwardButton" text="" tooltip="Forward" class="nodus-button deges-icon-button"/>
+                <ui:Button name="BackButton" text="" class="nodus-button nodus-icon-button" />
+                <ui:Button name="ForwardButton" text="" class="nodus-button nodus-icon-button" />
                 <ui:Button name="OpenFeedbackButton" text="Feedback" class="nodus-button nodus-button--primary">
                     <Bindings>
-                        <UnityEngine.Localization.LocalizedString property="text" table="GUID:ddb80f7d327c4b949bf146a72625f877" entry="Id(610257920000)"/>
+                        <loc:LocalizedString property="text" table="MainTable" entry="Feedback" />
                     </Bindings>
                 </ui:Button>
             </ui:VisualElement>
-            <ui:VisualElement class="deges-toolbar-settings">
-                <ui:VisualElement class="deges-select-wrap deges-select-wrap--language">
-                    <ui:DropdownField name="LanguageDropdown" tooltip="Language" class="deges-select"/>
-                    <ui:Label text="" picking-mode="Ignore" class="deges-select-icon"/>
+            <ui:VisualElement class="nodus-toolbar__settings">
+                <ui:VisualElement class="nodus-select-wrap">
+                    <ui:DropdownField name="LanguageDropdown" class="nodus-select" />
+                    <ui:Label text="" class="nodus-select-icon" picking-mode="Ignore" />
                 </ui:VisualElement>
-                <ui:VisualElement class="deges-select-wrap deges-select-wrap--theme">
-                    <ui:DropdownField name="ThemeDropdown" tooltip="Theme" class="deges-select"/>
-                    <ui:Label text="" picking-mode="Ignore" class="deges-select-icon"/>
+                <ui:VisualElement class="nodus-select-wrap">
+                    <ui:DropdownField name="ThemeDropdown" class="nodus-select" />
+                    <ui:Label text="" class="nodus-select-icon" picking-mode="Ignore" />
                 </ui:VisualElement>
             </ui:VisualElement>
         </ui:VisualElement>
-        <ui:VisualElement name="Panels" picking-mode="Ignore" class="deges-stack"/>
+        <ui:VisualElement name="Panels" class="nodus-stack" picking-mode="Ignore" />
     </ui:VisualElement>
 </ui:UXML>

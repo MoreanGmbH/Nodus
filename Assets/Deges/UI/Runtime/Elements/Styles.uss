@@ -1,40 +1,52 @@
-/* Project UI layout and controls. Theme colors come from the active ThemeProfile. */
-.deges-app {
-    flex-grow: 1;
-}
+/* Shared project UI styles. Colors and typography come from the active Nodus theme. */
 
-.deges-toolbar {
-    height: 66px;
+.nodus-toolbar--responsive {
+    height: auto;
     min-height: 66px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
     padding-left: 18px;
     padding-right: 18px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
-.deges-toolbar-settings {
-    flex-direction: row;
+.nodus-toolbar--responsive .nodus-toolbar__items {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-wrap: wrap;
     align-items: center;
+}
+
+.nodus-toolbar__settings {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
     margin-left: auto;
 }
 
-.deges-select-wrap {
+/* The field width is measured from the longest translated choice in Systems.cs. */
+.nodus-select-wrap {
+    position: relative;
+    flex-direction: row;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: auto;
     height: 36px;
     margin-left: 10px;
-    position: relative;
-    flex-shrink: 0;
+    margin-top: 4px;
+    margin-bottom: 4px;
 }
 
-.deges-select-wrap--language {
-    width: 146px;
-}
-
-.deges-select-wrap--theme {
-    width: 112px;
-}
-
-.deges-select {
+.nodus-select {
     width: 100%;
-    height: 100%;
+    height: 36px;
     min-height: 36px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    min-width: 0;
     margin-left: 0;
     margin-right: 0;
     margin-top: 0;
@@ -47,43 +59,47 @@
     color: var(--nodus-text);
 }
 
-.deges-select .unity-base-popup-field__input,
-.deges-select .unity-popup-field__input {
+.nodus-select .unity-base-popup-field__input,
+.nodus-select .unity-popup-field__input {
+    width: 100%;
     height: 36px;
     min-height: 36px;
-    width: 100%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-direction: row;
+    align-items: center;
     background-color: var(--nodus-surface-muted);
     border-width: 1px;
     border-color: var(--nodus-border);
     border-radius: 8px;
     padding-left: 12px;
-    padding-right: 32px;
-    align-items: center;
+    padding-right: 38px;
 }
 
-.deges-select:hover .unity-base-popup-field__input,
-.deges-select:hover .unity-popup-field__input {
+.nodus-select:hover .unity-base-popup-field__input,
+.nodus-select:hover .unity-popup-field__input {
     background-color: var(--nodus-primary-soft);
     border-color: var(--nodus-primary);
 }
 
-.deges-select .unity-base-popup-field__text,
-.deges-select .unity-popup-field__text {
+.nodus-select .unity-base-popup-field__text,
+.nodus-select .unity-popup-field__text {
     flex-grow: 1;
+    flex-shrink: 0;
+    min-width: 0;
+    white-space: nowrap;
+    overflow: visible;
+    -unity-text-align: middle-left;
     font-size: var(--nodus-font-body);
     color: var(--nodus-text);
-    -unity-text-align: middle-left;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
-.deges-select .unity-base-popup-field__arrow,
-.deges-select .unity-popup-field__arrow {
+.nodus-select .unity-base-popup-field__arrow,
+.nodus-select .unity-popup-field__arrow {
     display: none;
 }
 
-.deges-select-icon {
+.nodus-select-icon {
     position: absolute;
     right: 10px;
     top: 0;
@@ -95,10 +111,11 @@
     -unity-font-definition: url("/Assets/UI/Fonts/MaterialIcons-Regular SDF.asset");
 }
 
-.deges-icon-button {
+.nodus-icon-button {
     width: 36px;
     height: 36px;
     min-height: 36px;
+    flex-shrink: 0;
     margin-right: 4px;
     padding-left: 0;
     padding-right: 0;
@@ -108,14 +125,14 @@
     -unity-font-definition: url("/Assets/UI/Fonts/MaterialIcons-Regular SDF.asset");
 }
 
-.deges-toolbar .nodus-button--primary {
+.nodus-toolbar--responsive .nodus-button--primary {
     height: 36px;
     min-height: 36px;
     padding-left: 14px;
     padding-right: 14px;
 }
 
-.deges-stack {
+.nodus-stack {
     position: absolute;
     left: 0;
     right: 0;
@@ -123,24 +140,26 @@
     bottom: 0;
 }
 
-.deges-feedback {
+.nodus-feedback {
     position: absolute;
     top: 108px;
+    left: 26px;
     right: 26px;
-    width: 380px;
+    width: auto;
+    max-width: 380px;
     min-height: 290px;
     border-width: 1px;
     border-color: var(--nodus-border);
 }
 
-.deges-feedback-heading {
+.nodus-feedback__heading {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
 }
 
-.deges-feedback-text {
+.nodus-feedback__text {
     min-height: 130px;
     margin-top: 10px;
     margin-bottom: 14px;

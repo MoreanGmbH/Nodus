@@ -24,10 +24,9 @@ namespace Deges.UI {
 
                 var isBound = entity.TryGetComponent<BoundUIRoot>(out var bound)
                     && ReferenceEquals(bound.Root, reference.Root);
-
                 if (!isBound) {
                     Bind(reference.Root, reference.Configuration, Query.Store);
-                    entity.AddComponent(new BoundUIRoot { Root = reference.Root, LocaleBound = true });
+                    entity.AddComponent(new BoundUIRoot { Root = reference.Root });
                 }
 
                 SyncSelections(reference.Root, Query.Store);
@@ -37,69 +36,105 @@ namespace Deges.UI {
         static string Localize(StringTable table, string key, string fallback) {
             var entry = table?.GetEntry(key);
             return entry != null && !string.IsNullOrWhiteSpace(entry.LocalizedValue)
-                ? entry.LocalizedValue
-                : fallback;
+                ? entry.LocalizedValue : fallback;
         }
 
         static void RefreshDropdown(DropdownField dropdown) {
-            // A formatter is not necessarily reevaluated when the locale changes
-            // while the underlying selected value stays the same.
             var selected = dropdown.value;
             dropdown.SetValueWithoutNotify(null);
             dropdown.SetValueWithoutNotify(selected);
         }
 
+        // Fit the selected localized label (plus padding and the icon).
+        static void FitDropdown(DropdownField dropdown) {
+            dropdown.schedule.Execute(() => {
+                var label = dropdown.Q<TextElement>(className: "unity-base-popup-field__text");
+                if (label == null)
+                    return;
+
+                var text = dropdown.formatSelectedValueCallback?.Invoke(dropdown.value) ?? dropdown.value;
+                if (string.IsNullOrEmpty(text))
+                    return;
+
+                var size = label.MeasureTextSize(text, 0, VisualElement.MeasureMode.Undefined,
+                    0, VisualElement.MeasureMode.Undefined);
+                dropdown.style.width = (float)Math.Ceiling(size.x) + 54;
+            });
+        }
+
+        // The selected control fits its label; the open menu fits its longest option.
+        static void FitPopup(DropdownField dropdown) {
+            dropdown.schedule.Execute(() => {
+                if (dropdown.panel == null)
+                    return;
+
+                var popup = dropdown.panel.visualTree.Q<VisualElement>(className: GenericDropdownMenu.containerOuterUssClassName);
+                var label = dropdown.Q<TextElement>(className: "unity-base-popup-field__text");
+                if (popup == null || label == null)
+                    return;
+
+                float width = dropdown.resolvedStyle.width;
+                foreach (var choice in dropdown.choices) {
+                    var text = dropdown.formatListItemCallback?.Invoke(choice) ?? choice;
+                    var size = label.MeasureTextSize(text, 0, VisualElement.MeasureMode.Undefined,
+                        0, VisualElement.MeasureMode.Undefined);
+                    width = Math.Max(width, size.x + 48);
+                }
+
+                width = (float)Math.Ceiling(width);
+                popup.style.width = width;
+                popup.style.minWidth = width;
+
+                // Keep the wider popup inside the panel near the right edge.
+                var panelWidth = dropdown.panel.visualTree.resolvedStyle.width;
+                if (popup.resolvedStyle.left + width > panelWidth)
+                    popup.style.left = Math.Max(0, panelWidth - width);
+            });
+        }
+
         static void Bind(VisualElement root, UIConfiguration configuration, EntityStore store) {
-            if (configuration == null)
+            if (!configuration)
                 throw new InvalidOperationException("Assign UIConfiguration on the UI component.");
 
             var theme = root.Q<DropdownField>("ThemeDropdown")
-                ?? throw new InvalidOperationException("Missing ThemeDropdown in Infrastructure.uxml.");
+                ?? throw new InvalidOperationException("Missing ThemeDropdown in InfrastructurePanel.uxml.");
             var language = root.Q<DropdownField>("LanguageDropdown")
-                ?? throw new InvalidOperationException("Missing LanguageDropdown in Infrastructure.uxml.");
+                ?? throw new InvalidOperationException("Missing LanguageDropdown in InfrastructurePanel.uxml.");
 
             var themeNames = new List<string>();
-            var uniqueNames = new HashSet<string>(StringComparer.Ordinal);
             foreach (var profile in configuration.Themes) {
-                if (profile == null)
-                    throw new InvalidOperationException("UIConfiguration contains a missing ThemeProfile.");
-                if (!uniqueNames.Add(profile.name))
-                    throw new InvalidOperationException($"Duplicate theme asset name: {profile.name}");
+                if (!profile)
+                    throw new InvalidOperationException("Missing theme in UIConfiguration.");
                 themeNames.Add(profile.name);
             }
             if (themeNames.Count == 0)
-                throw new InvalidOperationException("Add ThemeProfiles to UIConfiguration > Themes.");
+                throw new InvalidOperationException("UIConfiguration requires at least one theme.");
 
-            var locales = LocalizationSettings.AvailableLocales.Locales;
-            var languageCodes = new List<string>();
-            var localesByCode = new Dictionary<string, Locale>(StringComparer.OrdinalIgnoreCase);
-            foreach (var locale in locales) {
-                var code = locale.Identifier.Code;
-                if (!localesByCode.TryAdd(code, locale))
-                    throw new InvalidOperationException($"Duplicate locale code: {code}");
-                languageCodes.Add(code);
-            }
-            if (languageCodes.Count == 0)
+            var codes = new List<string>();
+            foreach (var locale in LocalizationSettings.AvailableLocales.Locales)
+                codes.Add(locale.Identifier.Code);
+            if (codes.Count == 0)
                 throw new InvalidOperationException("Add locales in Project Settings > Localization.");
 
-            // Cached StringTable is populated asynchronously; works in WebGL too.
             StringTable stringTable = null;
 
             theme.choices = themeNames;
             theme.formatSelectedValueCallback = name =>
-                string.IsNullOrEmpty(name) ? string.Empty : Localize(stringTable, $"Theme.{name}", name);
+                string.IsNullOrEmpty(name) ? string.Empty : Localize(stringTable, name, name);
             theme.formatListItemCallback = theme.formatSelectedValueCallback;
             theme.SetValueWithoutNotify(themeNames[0]);
-            theme.RegisterValueChangedCallback(evt =>
-                store.CreateEntity(new SetTheme { ThemeName = evt.newValue }));
+            theme.RegisterValueChangedCallback(evt => {
+                store.CreateEntity(new SetTheme { ThemeName = evt.newValue });
+                FitDropdown(theme);
+            });
+            theme.RegisterCallback<PointerDownEvent>(_ => FitPopup(theme));
 
-            language.choices = languageCodes;
+            language.choices = codes;
             language.formatSelectedValueCallback = code => {
                 if (string.IsNullOrEmpty(code))
                     return string.Empty;
-                if (!localesByCode.TryGetValue(code, out var locale))
-                    return code;
-                var fallback = locale.LocaleName;
+                var locale = LocalizationSettings.AvailableLocales.GetLocale(code);
+                var fallback = locale != null ? locale.LocaleName : code;
                 var suffix = fallback.LastIndexOf(" (", StringComparison.Ordinal);
                 if (suffix >= 0)
                     fallback = fallback.Substring(0, suffix);
@@ -108,13 +143,14 @@ namespace Deges.UI {
             language.formatListItemCallback = language.formatSelectedValueCallback;
             language.SetValueWithoutNotify(LocalizationSettings.SelectedLocale.Identifier.Code);
             language.RegisterValueChangedCallback(evt => {
-                if (!localesByCode.TryGetValue(evt.newValue, out var locale))
+                var locale = LocalizationSettings.AvailableLocales.GetLocale(evt.newValue);
+                if (locale == null)
                     throw new InvalidOperationException($"Unknown locale: {evt.newValue}");
 
-                // Apply to Unity directly. Also emit ECS request for LocaleState consumers.
                 LocalizationSettings.SelectedLocale = locale;
                 store.CreateEntity(new SetLocale { Code = evt.newValue });
             });
+            language.RegisterCallback<PointerDownEvent>(_ => FitPopup(language));
 
             void LoadStrings(Locale _) {
                 var requestedCode = LocalizationSettings.SelectedLocale?.Identifier.Code;
@@ -125,6 +161,8 @@ namespace Deges.UI {
                     stringTable = operation.Result;
                     RefreshDropdown(theme);
                     RefreshDropdown(language);
+                    FitDropdown(theme);
+                    FitDropdown(language);
                 };
             }
 
@@ -132,6 +170,8 @@ namespace Deges.UI {
             root.RegisterCallback<DetachFromPanelEvent>(_ =>
                 LocalizationSettings.SelectedLocaleChanged -= LoadStrings);
             LoadStrings(LocalizationSettings.SelectedLocale);
+            FitDropdown(theme);
+            FitDropdown(language);
             root.RegisterCallback<ClickEvent>(evt => OnClick(evt, root, store));
         }
 
@@ -159,7 +199,7 @@ namespace Deges.UI {
 
             switch (button.name) {
                 case "OpenFeedbackButton":
-                    Navigation.CreateRequest(new PushView { StackId = "Main", ViewId = "FeedbackView" }, "Open feedback");
+                    Navigation.CreateRequest(new PushView { StackId = "Main", ViewId = "FeedbackPanel" }, "Open feedback");
                     break;
                 case "FeedbackCloseButton":
                     Navigation.CreateRequest(new PopView { StackId = "Main" }, "Close feedback");

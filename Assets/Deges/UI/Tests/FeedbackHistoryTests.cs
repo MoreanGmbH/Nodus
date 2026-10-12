@@ -17,7 +17,7 @@ namespace Deges.UI.Tests {
             };
 
             var request = store.CreateEntity(new Request { Action = ActionType.Commit });
-            request.AddAction(new PushView { StackId = "Main", ViewId = "Feedback" });
+            request.AddAction(new PushView { StackId = "Main", ViewId = "FeedbackPanel" });
             systems.Update(default);
             Assert.AreEqual(1, CountLiveViews(store));
 

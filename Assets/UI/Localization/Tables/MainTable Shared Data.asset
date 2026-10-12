@@ -20,7 +20,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 207281655701504
-    m_Key: 'Locale.de '
+    m_Key: Locale.de
     m_Metadata:
       m_Items: []
   - m_Id: 207558567845888
@@ -28,11 +28,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 207648221093888
-    m_Key: Theme.Light
+    m_Key: MoreanLightTheme
     m_Metadata:
       m_Items: []
   - m_Id: 207817964576768
-    m_Key: Theme.Dark
+    m_Key: MoreanDarkTheme
     m_Metadata:
       m_Items: []
   - m_Id: 253175176421376
