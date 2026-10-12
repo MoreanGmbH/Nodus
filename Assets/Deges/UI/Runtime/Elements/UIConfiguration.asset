@@ -12,12 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca8ef076e15c48f5b466560df9815b2c, type: 3}
   m_Name: UIConfiguration
   m_EditorClassIdentifier: Nodus.UI::Nodus.UI.UIConfiguration
-  themes:
+  Themes:
   - {fileID: 11400000, guid: 90bd8bdeb5c402a44bd43e276c9abfd5, type: 2}
   - {fileID: 11400000, guid: f6235af4b515d754cb7704cdb8b6f1f0, type: 2}
-  views:
-  - {fileID: 11400000, guid: 8112a6cc4bbfe044aa2a0ed7871c17cf, type: 2}
-  stacks:
+  Stacks:
   - Id: Main
     ContainerName: Panels
     Presentation: 0
+  views:
+  - {fileID: 11400000, guid: b02df2303934aaa4b9435f3a31fc82bc, type: 2}
+  - {fileID: 11400000, guid: 8112a6cc4bbfe044aa2a0ed7871c17cf, type: 2}

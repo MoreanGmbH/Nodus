@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: MoreanDarkTheme
   m_EditorClassIdentifier: Nodus.UI::Nodus.UI.ThemeProfile
   id: MoreanDarkTheme
+  displayName: Dark
   Theme: {fileID: -4733365628477956816, guid: ef71e3720b5c3e54aadf8bbd46a599bf, type: 3}
   Font: {fileID: 11400000, guid: 9ffeef19a9af30a49a1d9c996df3b101, type: 2}
   Primary: {r: 0.34509805, g: 0.72156864, b: 0.92941177, a: 1}

@@ -1,0 +1,32 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:loc="UnityEngine.Localization">
+    <Style src="../../Styles.uss" />
+    <ui:VisualElement name="FeedbackPanel" class="nodus-panel deges-feedback">
+        <ui:VisualElement class="deges-feedback-heading">
+            <ui:Label text="Feedback" class="nodus-panel__title">
+                <Bindings>
+                    <loc:LocalizedString property="text" table="MainTable" entry="Feedback.Title" />
+                </Bindings>
+            </ui:Label>
+            <ui:Button name="FeedbackCloseButton" text="Close" class="nodus-button">
+                <Bindings>
+                    <loc:LocalizedString property="text" table="MainTable" entry="Feedback.Close" />
+                </Bindings>
+            </ui:Button>
+        </ui:VisualElement>
+        <ui:Label text="Tell us what you think about the project." class="nodus-label--small">
+            <Bindings>
+                <loc:LocalizedString property="text" table="MainTable" entry="Feedback.Description" />
+            </Bindings>
+        </ui:Label>
+        <ui:TextField name="FeedbackMessage" label="Your comment" multiline="true" class="deges-feedback-text">
+            <Bindings>
+                <loc:LocalizedString property="label" table="MainTable" entry="Feedback.MessageLabel" />
+            </Bindings>
+        </ui:TextField>
+        <ui:Button name="FeedbackSubmitButton" text="Submit feedback" class="nodus-button nodus-button--primary">
+            <Bindings>
+                <loc:LocalizedString property="text" table="MainTable" entry="Feedback.Submit" />
+            </Bindings>
+        </ui:Button>
+    </ui:VisualElement>
+</ui:UXML>

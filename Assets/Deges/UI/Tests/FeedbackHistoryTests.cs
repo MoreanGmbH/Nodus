@@ -12,7 +12,7 @@ namespace Deges.UI.Tests {
             var systems = new SystemRoot(store) {
                 new PushViewSystem(),
                 new PopViewSystem(),
-                new FeedbackHistoryTrackingSystem(),
+                new FeedbackInputSystem(),
                 new HistorySystem()
             };
 

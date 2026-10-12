@@ -71,8 +71,6 @@ MonoBehaviour:
     enabled: 1
   - typeName: Nodus.UI.PopViewSystem, Nodus.UI
     enabled: 1
-  - typeName: Deges.UI.FeedbackHistoryTrackingSystem, Deges.UI
-    enabled: 1
   - typeName: Nodus.Navigation.HistorySystem, Nodus.Navigation
     enabled: 1
   - typeName: Nodus.UI.ThemeSystem, Nodus.UI
@@ -82,8 +80,6 @@ MonoBehaviour:
   - typeName: Nodus.UI.ViewsSystem, Nodus.UI
     enabled: 1
   - typeName: Deges.UI.FeedbackInputSystem, Deges.UI
-    enabled: 1
-  - typeName: Deges.UI.FeedbackHistoryControlsSystem, Deges.UI
     enabled: 1
   - typeName: Nodus.UI.VisibilitySystem, Nodus.UI
     enabled: 1
@@ -171,7 +167,7 @@ PanelRenderer:
   m_MaskInteraction: 0
   serializedVersion: 1
   m_PanelSettings: {fileID: 11400000, guid: 75da9d3b43f13c842b0a4832977cdecf, type: 2}
-  sourceAsset: {fileID: 9197481963319205126, guid: 4dd63a00b62b97646a64fe87bc506a01, type: 3}
+  sourceAsset: {fileID: 9197481963319205126, guid: 35bf7ee41de8b264587e46da591bec5e, type: 3}
   m_ParentUI: {fileID: 0}
   m_WorldSpaceSizeMode: 1
   m_WorldSpaceWidth: 1920

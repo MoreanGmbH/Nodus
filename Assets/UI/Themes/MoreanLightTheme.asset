@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: MoreanLightTheme
   m_EditorClassIdentifier: Nodus.UI::Nodus.UI.ThemeProfile
   id: MoreanLightTheme
+  displayName: Light
   Theme: {fileID: -4733365628477956816, guid: 2697891752a55c549b07cd305d1ce036, type: 3}
   Font: {fileID: 11400000, guid: 9ffeef19a9af30a49a1d9c996df3b101, type: 2}
   Primary: {r: 0.137, g: 0.608, b: 0.827, a: 1}

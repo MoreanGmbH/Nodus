@@ -12,5 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e91ee28ce6e4b468bc633c6f0214dc3, type: 3}
   m_Name: FeedbackView
   m_EditorClassIdentifier: Nodus.UI::Nodus.UI.ViewDefinition
-  id: Feedback
-  template: {fileID: 9197481963319205126, guid: 4dd63a00b62b97646a64fe87bc506a01, type: 3}
+  Template: {fileID: 9197481963319205126, guid: 4dd63a00b62b97646a64fe87bc506a01, type: 3}
