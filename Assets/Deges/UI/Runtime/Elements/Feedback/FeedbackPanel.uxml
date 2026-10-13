@@ -5,7 +5,7 @@
             <ui:Label text="Feedback" class="nodus-panel__title">
                 <Bindings><loc:LocalizedString property="text" table="MainTable" entry="Feedback" /></Bindings>
             </ui:Label>
-            <nodus:EntitiesButton name="FeedbackCloseButton" text="Close" entities="project://database/Assets/Deges/UI/Actions/CloseFeedback.asset?fileID=11400000&amp;guid=ed5515929495513b8e8f56dccebe0511&amp;type=2#CloseFeedback" class="nodus-button">
+            <nodus:EntitiesButton name="FeedbackCloseButton" text="Close" entities="project://database/Assets/Deges/UI/Runtime/Elements/Feedback/CloseFeedback.asset?fileID=11400000&amp;guid=ed5515929495513b8e8f56dccebe0511&amp;type=2#CloseFeedback" class="nodus-button">
                 <Bindings><loc:LocalizedString property="text" table="MainTable" entry="Close" /></Bindings>
             </nodus:EntitiesButton>
         </ui:VisualElement>

@@ -125,7 +125,7 @@ MonoBehaviour:
         m_Names:
         - list
         - l
-        -
+        - ""
         m_SmartSettings:
           rid: 2931198212773773561
     - rid: 2931198212773773564
@@ -153,7 +153,7 @@ MonoBehaviour:
         m_Names:
         - plural
         - p
-        -
+        - ""
         m_DefaultTwoLetterISOLanguageName: en
     - rid: 2931198212773773571
       type: {class: ConditionalFormatter, ns: UnityEngine.Localization.SmartFormat.Extensions, asm: Unity.Localization}
@@ -161,7 +161,7 @@ MonoBehaviour:
         m_Names:
         - conditional
         - cond
-        -
+        - ""
     - rid: 2931198212773773572
       type: {class: TimeFormatter, ns: UnityEngine.Localization.SmartFormat.Extensions, asm: Unity.Localization}
       data:
@@ -169,7 +169,7 @@ MonoBehaviour:
         - timespan
         - time
         - t
-        -
+        - ""
         m_DefaultFormatOptions: 4646
     - rid: 2931198212773773573
       type: {class: XElementFormatter, ns: UnityEngine.Localization.SmartFormat.Extensions, asm: Unity.Localization}
@@ -178,7 +178,7 @@ MonoBehaviour:
         - xelement
         - xml
         - x
-        -
+        - ""
     - rid: 2931198212773773574
       type: {class: ChooseFormatter, ns: UnityEngine.Localization.SmartFormat.Extensions, asm: Unity.Localization}
       data:

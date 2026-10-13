@@ -18,11 +18,11 @@
             </ui:VisualElement>
             <ui:VisualElement class="nodus-toolbar__settings">
                 <ui:VisualElement class="nodus-select-wrap">
-                    <ui:DropdownField name="LanguageDropdown" class="nodus-select"/>
+                    <nodus:EntitiesDropdown name="LanguageDropdown" options="project://database/Assets/Deges/UI/Runtime/Elements/Infrastructure/LocaleOptions.asset?fileID=11400000&amp;guid=ffd7b35c14404a7985d7f31e85dfce94&amp;type=2#LocaleOptions" class="nodus-select"/>
                     <ui:Label text="" picking-mode="Ignore" class="nodus-select-icon"/>
                 </ui:VisualElement>
                 <ui:VisualElement class="nodus-select-wrap">
-                    <ui:DropdownField name="ThemeDropdown" class="nodus-select"/>
+                    <nodus:EntitiesDropdown name="ThemeDropdown" options="project://database/Assets/Deges/UI/Runtime/Elements/Infrastructure/ThemeOptions.asset?fileID=11400000&amp;guid=48a8b501084b42e189ec919a9bea0edb&amp;type=2#ThemeOptions" class="nodus-select"/>
                     <ui:Label text="" picking-mode="Ignore" class="nodus-select-icon"/>
                 </ui:VisualElement>
             </ui:VisualElement>
