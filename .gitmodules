@@ -13,3 +13,6 @@
 [submodule "Packages/com.kurobon.friflo_ecs_unity_entity_visualize"]
 	path = Packages/com.kurobon.friflo_ecs_unity_entity_visualize
 	url = https://github.com/MoreanGmbH/FrifloECS.Unity.EntityVisualize.git
+[submodule "Packages/com.morean.online-maps"]
+	path = Packages/com.morean.online-maps
+	url = https://github.com/MoreanGmbH/OnlineMaps.git
