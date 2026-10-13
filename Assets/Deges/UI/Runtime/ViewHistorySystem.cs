@@ -4,12 +4,19 @@ using Nodus.Navigation;
 using Nodus.UI;
 
 namespace Deges.UI {
-    // Composition boundary between UI and Navigation packages: no package cycle.
+    // Only navigable application views are included in navigation snapshots.
     public sealed class ViewHistorySystem : QuerySystem<ViewState> {
         protected override void OnUpdate() {
             foreach (var entity in Query.Entities.ToEntityList()) {
-                if (!entity.IsNull && entity.Parent.IsNull && !entity.HasComponent<Tracked>())
-                    entity.AddComponent(new Tracked());
+                if (entity.IsNull || !entity.Parent.IsNull) continue;
+
+                var view = entity.GetComponent<ViewState>();
+                if (view.ViewId == "FeedbackPanel") {
+                    if (entity.HasComponent<Tracked>()) entity.RemoveComponent<Tracked>();
+                    continue;
+                }
+
+                if (!entity.HasComponent<Tracked>()) entity.AddComponent(new Tracked());
             }
         }
     }

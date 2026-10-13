@@ -11,20 +11,11 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c5a46f4ae821516ab87abe9c20fe7581, type: 3}
   m_Name: FeedbackFlow
+  m_EditorClassIdentifier: 
+  OverrideWaitFrames: 0
+  WaitFrames: 12
+  OverrideScreenshot: 0
+  CaptureScreenshot: 1
   Steps:
   - Entities: {fileID: 11400000, guid: a32178f14b225f07a28ca5162196f29e, type: 2}
-    WaitFrames: 2
-    CaptureScreenshot: 0
-    ScreenshotName: OpenFeedback
   - Entities: {fileID: 11400000, guid: ed5515929495513b8e8f56dccebe0511, type: 2}
-    WaitFrames: 2
-    CaptureScreenshot: 1
-    ScreenshotName: FeedbackClosed
-  - Entities: {fileID: 11400000, guid: 0fa860d76b7059d3917929ff3df0a55e, type: 2}
-    WaitFrames: 2
-    CaptureScreenshot: 1
-    ScreenshotName: FeedbackRestored
-  - Entities: {fileID: 11400000, guid: efee0c4d38115538b57e1da7ca2eda93, type: 2}
-    WaitFrames: 2
-    CaptureScreenshot: 0
-    ScreenshotName: FeedbackFinal

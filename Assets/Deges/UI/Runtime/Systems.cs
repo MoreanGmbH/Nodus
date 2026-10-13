@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using Friflo.Engine.ECS;
 using Friflo.Engine.ECS.Systems;
 using Nodus.ECS;
-using Nodus.Navigation;
 using Nodus.UI;
+using UnityEngine;
 using UnityEngine.Localization;
 using UnityEngine.Localization.Settings;
 using UnityEngine.Localization.Tables;
@@ -40,14 +40,18 @@ namespace Deges.UI {
         }
 
         static void RefreshDropdown(DropdownField dropdown) {
+            if (dropdown.panel == null) return;
+            // Reapply the stable choice (theme asset name / locale code), never the translated label.
+            // Setting the internal TextElement.text directly converts the label into a dropdown value.
             var selected = dropdown.value;
-            dropdown.SetValueWithoutNotify(null);
-            dropdown.SetValueWithoutNotify(selected);
+            if (!string.IsNullOrEmpty(selected) && dropdown.choices.Contains(selected))
+                dropdown.SetValueWithoutNotify(selected);
         }
 
         // Fit the selected localized label (plus padding and the icon).
         static void FitDropdown(DropdownField dropdown) {
             dropdown.schedule.Execute(() => {
+                if (!Application.isPlaying || dropdown.panel == null) return;
                 var label = dropdown.Q<TextElement>(className: "unity-base-popup-field__text");
                 if (label == null)
                     return;
@@ -65,7 +69,7 @@ namespace Deges.UI {
         // The selected control fits its label; the open menu fits its longest option.
         static void FitPopup(DropdownField dropdown) {
             dropdown.schedule.Execute(() => {
-                if (dropdown.panel == null)
+                if (!Application.isPlaying || dropdown.panel == null)
                     return;
 
                 var popup = dropdown.panel.visualTree.Q<VisualElement>(className: GenericDropdownMenu.containerOuterUssClassName);
@@ -123,6 +127,7 @@ namespace Deges.UI {
             theme.formatListItemCallback = theme.formatSelectedValueCallback;
             theme.SetValueWithoutNotify(themeNames[0]);
             theme.RegisterValueChangedCallback(evt => {
+                if (!themeNames.Contains(evt.newValue)) return;
                 store.CreateEntity(new SetTheme { ThemeName = evt.newValue });
                 FitDropdown(theme);
             });
@@ -142,6 +147,7 @@ namespace Deges.UI {
             language.formatListItemCallback = language.formatSelectedValueCallback;
             language.SetValueWithoutNotify(LocalizationSettings.SelectedLocale.Identifier.Code);
             language.RegisterValueChangedCallback(evt => {
+                if (!codes.Contains(evt.newValue)) return;
                 var locale = LocalizationSettings.AvailableLocales.GetLocale(evt.newValue);
                 if (locale == null)
                     throw new InvalidOperationException($"Unknown locale: {evt.newValue}");
@@ -151,11 +157,18 @@ namespace Deges.UI {
             });
             language.RegisterCallback<PointerDownEvent>(_ => FitPopup(language));
 
+            bool detached = false;
+            var boundPanel = root.panel;
             void LoadStrings(Locale _) {
+                if (detached || !Application.isPlaying || root.panel == null)
+                    return;
                 var requestedCode = LocalizationSettings.SelectedLocale?.Identifier.Code;
                 var request = LocalizationSettings.StringDatabase.GetTableAsync("MainTable");
                 request.Completed += operation => {
-                    if (requestedCode != LocalizationSettings.SelectedLocale?.Identifier.Code)
+                    // Addressables can complete after the UI panel has been destroyed on exit.
+                    if (detached || !Application.isPlaying || root.panel == null ||
+                        !ReferenceEquals(root.panel, boundPanel) ||
+                        requestedCode != LocalizationSettings.SelectedLocale?.Identifier.Code)
                         return;
                     stringTable = operation.Result;
                     RefreshDropdown(theme);
@@ -166,8 +179,10 @@ namespace Deges.UI {
             }
 
             LocalizationSettings.SelectedLocaleChanged += LoadStrings;
-            root.RegisterCallback<DetachFromPanelEvent>(_ =>
-                LocalizationSettings.SelectedLocaleChanged -= LoadStrings);
+            root.RegisterCallback<DetachFromPanelEvent>(_ => {
+                detached = true;
+                LocalizationSettings.SelectedLocaleChanged -= LoadStrings;
+            });
             LoadStrings(LocalizationSettings.SelectedLocale);
             FitDropdown(theme);
             FitDropdown(language);
@@ -201,7 +216,7 @@ namespace Deges.UI {
                 return;
             }
             store.CreateEntity(new FeedbackSubmission { Message = field.value });
-            Navigation.CreateRequest(new PopView { StackId = "Main" }, "Submit feedback");
+            store.CreateEntity(new PopView { StackId = "Main" });
         }
     }
 }

@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Settings.LocalizationSettings
   m_StartupSelectors:
   - rid: 2931198212773773554
-  - rid: 2931198212773773555
   - rid: 2931198212773773556
+  - rid: 2931198212773773555
   - rid: 2931198212773773579
   m_AvailableLocales:
     rid: 2931198212773773557
@@ -40,7 +40,7 @@ MonoBehaviour:
         m_CommandLineArgument: -language=
     - rid: 2931198212773773555
       type: {class: SystemLocaleSelector, ns: UnityEngine.Localization.Settings, asm: Unity.Localization}
-      data: 
+      data:
     - rid: 2931198212773773556
       type: {class: SpecificLocaleSelector, ns: UnityEngine.Localization.Settings, asm: Unity.Localization}
       data:
@@ -48,12 +48,12 @@ MonoBehaviour:
           m_Code: de
     - rid: 2931198212773773557
       type: {class: LocalesProvider, ns: UnityEngine.Localization.Settings, asm: Unity.Localization}
-      data: 
+      data:
     - rid: 2931198212773773558
       type: {class: LocalizedAssetDatabase, ns: UnityEngine.Localization.Settings, asm: Unity.Localization}
       data:
         m_DefaultTableReference:
-          m_TableCollectionName: 
+          m_TableCollectionName:
         m_CustomTableProvider:
           rid: -2
         m_CustomTablePostprocessor:
@@ -64,7 +64,7 @@ MonoBehaviour:
       type: {class: LocalizedStringDatabase, ns: UnityEngine.Localization.Settings, asm: Unity.Localization}
       data:
         m_DefaultTableReference:
-          m_TableCollectionName: 
+          m_TableCollectionName:
         m_CustomTableProvider:
           rid: -2
         m_CustomTablePostprocessor:
@@ -125,7 +125,7 @@ MonoBehaviour:
         m_Names:
         - list
         - l
-        - 
+        -
         m_SmartSettings:
           rid: 2931198212773773561
     - rid: 2931198212773773564
@@ -134,26 +134,26 @@ MonoBehaviour:
         m_Groups: []
     - rid: 2931198212773773565
       type: {class: DictionarySource, ns: UnityEngine.Localization.SmartFormat.Extensions, asm: Unity.Localization}
-      data: 
+      data:
     - rid: 2931198212773773566
       type: {class: ValueTupleSource, ns: UnityEngine.Localization.SmartFormat.Extensions, asm: Unity.Localization}
-      data: 
+      data:
     - rid: 2931198212773773567
       type: {class: XmlSource, ns: UnityEngine.Localization.SmartFormat.Extensions, asm: Unity.Localization}
-      data: 
+      data:
     - rid: 2931198212773773568
       type: {class: ReflectionSource, ns: UnityEngine.Localization.SmartFormat.Extensions, asm: Unity.Localization}
-      data: 
+      data:
     - rid: 2931198212773773569
       type: {class: DefaultSource, ns: UnityEngine.Localization.SmartFormat.Extensions, asm: Unity.Localization}
-      data: 
+      data:
     - rid: 2931198212773773570
       type: {class: PluralLocalizationFormatter, ns: UnityEngine.Localization.SmartFormat.Extensions, asm: Unity.Localization}
       data:
         m_Names:
         - plural
         - p
-        - 
+        -
         m_DefaultTwoLetterISOLanguageName: en
     - rid: 2931198212773773571
       type: {class: ConditionalFormatter, ns: UnityEngine.Localization.SmartFormat.Extensions, asm: Unity.Localization}
@@ -161,7 +161,7 @@ MonoBehaviour:
         m_Names:
         - conditional
         - cond
-        - 
+        -
     - rid: 2931198212773773572
       type: {class: TimeFormatter, ns: UnityEngine.Localization.SmartFormat.Extensions, asm: Unity.Localization}
       data:
@@ -169,7 +169,7 @@ MonoBehaviour:
         - timespan
         - time
         - t
-        - 
+        -
         m_DefaultFormatOptions: 4646
     - rid: 2931198212773773573
       type: {class: XElementFormatter, ns: UnityEngine.Localization.SmartFormat.Extensions, asm: Unity.Localization}
@@ -178,7 +178,7 @@ MonoBehaviour:
         - xelement
         - xml
         - x
-        - 
+        -
     - rid: 2931198212773773574
       type: {class: ChooseFormatter, ns: UnityEngine.Localization.SmartFormat.Extensions, asm: Unity.Localization}
       data:
@@ -205,7 +205,6 @@ MonoBehaviour:
         m_Names:
         - default
         - d
-        - 
     - rid: 2931198212773773579
       type: {class: SpecificLocaleSelector, ns: UnityEngine.Localization.Settings, asm: Unity.Localization}
       data:

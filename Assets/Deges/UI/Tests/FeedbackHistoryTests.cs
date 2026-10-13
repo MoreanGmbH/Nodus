@@ -81,15 +81,36 @@ namespace Deges.UI.Tests {
         }
 
         [Test]
-        public void OpenCloseBackForward() {
+        public void FeedbackDoesNotCreateHistory() {
+            var history = store.GetHistory();
             EcsRuntime.Spawn(open); systems.Update(default);
             Assert.AreEqual(1, CountViews());
+            foreach (var view in store.Query<ViewState>().Entities)
+                Assert.IsFalse(view.HasComponent<Tracked>(), "Feedback must not be tracked.");
+            Assert.AreEqual(1, history.ChildCount);
+
             EcsRuntime.Spawn(close); systems.Update(default);
             Assert.AreEqual(0, CountViews());
+            Assert.AreEqual(1, history.ChildCount);
+
             EcsRuntime.Spawn(back); systems.Update(default);
-            Assert.AreEqual(1, CountViews());
             EcsRuntime.Spawn(forward); systems.Update(default);
             Assert.AreEqual(0, CountViews());
+            Assert.AreEqual(1, history.ChildCount);
+        }
+
+        [Test]
+        public void OtherViewsRemainNavigable() {
+            var history = store.GetHistory();
+            store.CreateEntity(new ViewState { StackId = "Main", ViewId = "OtherPanel", InstanceId = "TestView", Order = 0 });
+            store.CreateEntity(new Request { Action = ActionType.Commit, Label = "Other view" });
+            systems.Update(default);
+            Assert.AreEqual(2, history.ChildCount);
+
+            EcsRuntime.Spawn(back); systems.Update(default);
+            Assert.AreEqual(0, CountViews());
+            EcsRuntime.Spawn(forward); systems.Update(default);
+            Assert.AreEqual(1, CountViews());
         }
 
         [Test]
@@ -105,17 +126,43 @@ namespace Deges.UI.Tests {
         }
 
         [Test]
-        public void ScenarioIsReusableData() {
-            var scenario = AssetDatabase.LoadAssetAtPath<Scenario>("Assets/Deges/UI/Tests/Scenarios/FeedbackFlow.asset");
-            Assert.NotNull(scenario);
-            Assert.AreEqual(4, scenario.Steps.Count);
-            int screenshots = 0;
-            foreach (var step in scenario.Steps) {
-                if (step.CaptureScreenshot) screenshots++;
-                Assert.NotNull(step.Entities);
-                Assert.DoesNotThrow(() => EcsJson.Validate(step.Entities.ToData()));
+        public void AllScenariosComposeIndependentScenarios() {
+            var all = AssetDatabase.LoadAssetAtPath<ScenarioContainer>("Assets/Deges/UI/Tests/Scenarios/AllScenarios.asset");
+            var feedback = AssetDatabase.LoadAssetAtPath<Scenario>("Assets/Deges/UI/Tests/Scenarios/FeedbackFlow.asset");
+            Assert.NotNull(all);
+            Assert.NotNull(feedback);
+            var feedbackSteps = ScenarioRunner.Plan(feedback);
+            Assert.AreEqual(2, feedbackSteps.Count);
+            Assert.AreSame(open, feedbackSteps[0].Entities);
+            Assert.AreSame(close, feedbackSteps[1].Entities);
+            Assert.AreEqual(12, feedbackSteps[0].WaitFrames);
+            Assert.IsTrue(feedbackSteps[0].CaptureScreenshot);
+
+            var steps = ScenarioRunner.Plan(all);
+            Assert.AreEqual(6, steps.Count);
+            Assert.AreEqual("SetGerman", steps[2].Entities.name);
+            Assert.AreEqual("SetEnglish", steps[3].Entities.name);
+            Assert.AreEqual("SetLightTheme", steps[4].Entities.name);
+            Assert.AreEqual("SetDarkTheme", steps[5].Entities.name);
+        }
+
+        [Test]
+        public void LocaleThemePresetsDoNotChangeHistory() {
+            EcsRegistry.RegisterComponent<SetLocale>();
+            EcsRegistry.RegisterComponent<SetTheme>();
+            var all = AssetDatabase.LoadAssetAtPath<ScenarioContainer>("Assets/Deges/UI/Tests/Scenarios/AllScenarios.asset");
+            var steps = ScenarioRunner.Plan(all);
+            var initialHistory = store.GetHistory().ChildCount;
+            var systems = new SystemRoot(store) { new SetLocaleSystem(), new SetThemeSystem() };
+            for (int i = 2; i < steps.Count; i++) {
+                EcsRuntime.Spawn(steps[i].Entities);
+                systems.Update(default);
+                foreach (var e in store.Query<ThemeState>().Entities)
+                    Assert.IsFalse(e.HasComponent<Tracked>());
+                foreach (var e in store.Query<LocaleState>().Entities)
+                    Assert.IsFalse(e.HasComponent<Tracked>());
             }
-            Assert.AreEqual(2, screenshots);
+            Assert.AreEqual(initialHistory, store.GetHistory().ChildCount);
         }
 
         int CountViews() {
