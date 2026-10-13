@@ -71,6 +71,8 @@ MonoBehaviour:
     enabled: 1
   - typeName: Nodus.UI.PopViewSystem, Nodus.UI
     enabled: 1
+  - typeName: Deges.UI.ViewHistorySystem, Deges.UI
+    enabled: 1
   - typeName: Nodus.Navigation.HistorySystem, Nodus.Navigation
     enabled: 1
   - typeName: Nodus.UI.ThemeSystem, Nodus.UI
@@ -98,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9826de8a5b34d449ff3be12496a4dee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Nodus.Navigation::Nodus.Navigation.Navigation
-  storeId: Main
+  storeId: Navigation
   visualize: 1
 --- !u!114 &4235333600624515418
 MonoBehaviour:
@@ -131,7 +133,6 @@ PanelRenderer:
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 0
-  m_ReflectionProbeUsage: 0
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
   m_RayTracingAccelStructBuildFlagsOverride: 0

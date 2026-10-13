@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f742257473dc4f4f95a39d6089662702, type: 3}
+  m_Name: ActionsCatalog
+  Definitions:
+  - {fileID: 11400000, guid: a32178f14b225f07a28ca5162196f29e, type: 2}
+  - {fileID: 11400000, guid: ed5515929495513b8e8f56dccebe0511, type: 2}
+  - {fileID: 11400000, guid: 0fa860d76b7059d3917929ff3df0a55e, type: 2}
+  - {fileID: 11400000, guid: efee0c4d38115538b57e1da7ca2eda93, type: 2}

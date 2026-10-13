@@ -1,14 +1,29 @@
 {
-  "name": "Deges.UI.PlayModeTests",
-  "rootNamespace": "Deges.UI.Tests",
-  "references": ["Deges.UI", "Nodus.UI", "Nodus.Navigation"],
-  "includePlatforms": [],
-  "excludePlatforms": [],
-  "allowUnsafeCode": false,
-  "overrideReferences": true,
-  "precompiledReferences": ["nunit.framework.dll", "Friflo.Engine.ECS.dll"],
-  "autoReferenced": false,
-  "defineConstraints": ["UNITY_INCLUDE_TESTS"],
-  "optionalUnityReferences": ["TestAssemblies"],
-  "noEngineReferences": false
+    "name": "Deges.UI.PlayModeTests",
+    "rootNamespace": "Deges.UI.Tests",
+    "references": [
+        "Deges.UI",
+        "Nodus.ECS",
+        "Nodus.UI",
+        "Nodus.Navigation",
+        "UnityEngine.TestRunner",
+        "UnityEditor.TestRunner"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll",
+        "Friflo.Engine.ECS.dll",
+        "nunit.framework.dll",
+        "Newtonsoft.Json.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS",
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
 }

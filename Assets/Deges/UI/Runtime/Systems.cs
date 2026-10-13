@@ -85,7 +85,6 @@ namespace Deges.UI {
                 popup.style.width = width;
                 popup.style.minWidth = width;
 
-                // Keep the wider popup inside the panel near the right edge.
                 var panelWidth = dropdown.panel.visualTree.resolvedStyle.width;
                 if (popup.resolvedStyle.left + width > panelWidth)
                     popup.style.left = Math.Max(0, panelWidth - width);
@@ -172,7 +171,11 @@ namespace Deges.UI {
             LoadStrings(LocalizationSettings.SelectedLocale);
             FitDropdown(theme);
             FitDropdown(language);
-            root.RegisterCallback<ClickEvent>(evt => OnClick(evt, root, store));
+            root.RegisterCallback<ClickEvent>(evt => {
+                if (evt.target is not VisualElement target) return;
+                var button = target as Button ?? target.GetFirstAncestorOfType<Button>();
+                if (button?.name == "FeedbackSubmitButton") Submit(root, store);
+            });
         }
 
         static void SyncSelections(VisualElement root, EntityStore store) {
@@ -190,32 +193,6 @@ namespace Deges.UI {
                 language.SetValueWithoutNotify(code);
         }
 
-        static void OnClick(ClickEvent evt, VisualElement root, EntityStore store) {
-            if (evt.target is not VisualElement target)
-                return;
-            var button = target as Button ?? target.GetFirstAncestorOfType<Button>();
-            if (button == null)
-                return;
-
-            switch (button.name) {
-                case "OpenFeedbackButton":
-                    Navigation.CreateRequest(new PushView { StackId = "Main", ViewId = "FeedbackPanel" }, "Open feedback");
-                    break;
-                case "FeedbackCloseButton":
-                    Navigation.CreateRequest(new PopView { StackId = "Main" }, "Close feedback");
-                    break;
-                case "FeedbackSubmitButton":
-                    Submit(root, store);
-                    break;
-                case "BackButton":
-                    Navigation.Back();
-                    break;
-                case "ForwardButton":
-                    Navigation.Forward();
-                    break;
-            }
-        }
-
         static void Submit(VisualElement root, EntityStore store) {
             var field = root.Q<TextField>("FeedbackMessage")
                 ?? throw new InvalidOperationException("Missing FeedbackMessage field.");
@@ -223,7 +200,6 @@ namespace Deges.UI {
                 field.Focus();
                 return;
             }
-
             store.CreateEntity(new FeedbackSubmission { Message = field.value });
             Navigation.CreateRequest(new PopView { StackId = "Main" }, "Submit feedback");
         }

@@ -42,6 +42,18 @@ MonoBehaviour:
     m_Localized: Infrastruktur
     m_Metadata:
       m_Items: []
+  - m_Id: 524866708365312
+    m_Localized: "Schlie\xDFen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 524917404917760
+    m_Localized: Absenden
+    m_Metadata:
+      m_Items: []
+  - m_Id: 525080513011712
+    m_Localized: Teilen Sie uns Ihre Meinung zum Projekt mit.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

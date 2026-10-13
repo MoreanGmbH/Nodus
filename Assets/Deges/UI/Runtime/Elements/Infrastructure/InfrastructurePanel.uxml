@@ -1,20 +1,16 @@
-<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:loc="UnityEngine.Localization">
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:loc="UnityEngine.Localization" xmlns:nodus="Nodus.UI">
     <Style src="../Styles.uss" />
     <ui:VisualElement name="App" class="nodus-root">
         <ui:VisualElement name="Toolbar" class="nodus-toolbar nodus-toolbar--responsive">
             <ui:Label text="Infrastructure" class="nodus-toolbar__brand">
-                <Bindings>
-                    <loc:LocalizedString property="text" table="MainTable" entry="Project.Title" />
-                </Bindings>
+                <Bindings><loc:LocalizedString property="text" table="MainTable" entry="Project.Title" /></Bindings>
             </ui:Label>
             <ui:VisualElement class="nodus-toolbar__items">
-                <ui:Button name="BackButton" text="" class="nodus-button nodus-icon-button" />
-                <ui:Button name="ForwardButton" text="" class="nodus-button nodus-icon-button" />
-                <ui:Button name="OpenFeedbackButton" text="Feedback" class="nodus-button nodus-button--primary">
-                    <Bindings>
-                        <loc:LocalizedString property="text" table="MainTable" entry="Feedback" />
-                    </Bindings>
-                </ui:Button>
+                <nodus:EntitiesButton name="BackButton" text="" entities="project://database/Packages/com.nodus.navigation/Runtime/Actions/Back.asset?fileID=11400000&amp;guid=0fa860d76b7059d3917929ff3df0a55e&amp;type=2#Back" class="nodus-button nodus-icon-button" />
+                <nodus:EntitiesButton name="ForwardButton" text="" entities="project://database/Packages/com.nodus.navigation/Runtime/Actions/Forward.asset?fileID=11400000&amp;guid=efee0c4d38115538b57e1da7ca2eda93&amp;type=2#Forward" class="nodus-button nodus-icon-button" />
+                <nodus:EntitiesButton name="OpenFeedbackButton" text="Feedback" entities="project://database/Assets/Deges/UI/Actions/OpenFeedback.asset?fileID=11400000&amp;guid=a32178f14b225f07a28ca5162196f29e&amp;type=2#OpenFeedback" class="nodus-button nodus-button--primary">
+                    <Bindings><loc:LocalizedString property="text" table="MainTable" entry="Feedback" /></Bindings>
+                </nodus:EntitiesButton>
             </ui:VisualElement>
             <ui:VisualElement class="nodus-toolbar__settings">
                 <ui:VisualElement class="nodus-select-wrap">
