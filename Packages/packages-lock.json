@@ -8,11 +8,16 @@
       "hash": "acc1c7bc9ea34c33b830e40316fca52553878d29"
     },
     "com.kurobon.friflo_ecs_unity_entity_visualize": {
-      "version": "https://github.com/kurobon-jp/FrifloECS.Unity.EntityVisualize.git?path=Assets/FrifloECS.Unity.EntityVisualize/",
+      "version": "file:com.kurobon.friflo_ecs_unity_entity_visualize",
       "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "1fd738feeb138921d0fe835cab5761955926ad5a"
+      "source": "embedded",
+      "dependencies": {}
+    },
+    "com.morean.online-maps": {
+      "version": "file:com.morean.online-maps",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
     },
     "com.nodus.ecs": {
       "version": "file:com.nodus.ecs",

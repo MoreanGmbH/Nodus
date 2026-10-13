@@ -1,7 +1,6 @@
 {
   "dependencies": {
     "com.github-glitchenzo.nugetforunity": "https://github.com/GlitchEnzo/NuGetForUnity.git?path=/src/NuGetForUnity",
-    "com.kurobon.friflo_ecs_unity_entity_visualize": "https://github.com/kurobon-jp/FrifloECS.Unity.EntityVisualize.git?path=Assets/FrifloECS.Unity.EntityVisualize/",
     "com.unity.ide.visualstudio": "2.0.28",
     "com.unity.inputsystem": "1.20.1",
     "com.unity.localization": "1.5.13",

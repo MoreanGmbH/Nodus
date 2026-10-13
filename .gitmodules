@@ -10,3 +10,6 @@
 [submodule "Packages/com.nodus.ecs"]
 	path = Packages/com.nodus.ecs
 	url = https://github.com/MoreanGmbH/Nodus.ECS.git
+[submodule "Packages/com.kurobon.friflo_ecs_unity_entity_visualize"]
+	path = Packages/com.kurobon.friflo_ecs_unity_entity_visualize
+	url = https://github.com/MoreanGmbH/FrifloECS.Unity.EntityVisualize.git
