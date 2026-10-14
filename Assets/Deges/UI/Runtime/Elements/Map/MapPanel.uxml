@@ -3,7 +3,10 @@
     <ui:VisualElement name="MapRoot" picking-mode="Ignore" class="nodus-map-root">
         <ui:VisualElement name="ComparisonOverlay" picking-mode="Ignore" class="nodus-map-comparison-overlay">
             <ui:VisualElement name="ComparisonDivider" class="nodus-map-comparison-divider">
-                <ui:Label name="ComparisonHandle" text="↔" class="nodus-map-comparison-handle" />
+                <ui:VisualElement name="ComparisonHandle" class="nodus-map-comparison-handle">
+                <ui:Label text="" picking-mode="Ignore" class="nodus-map-comparison-chevron nodus-map-icon-font" />
+                <ui:Label text="" picking-mode="Ignore" class="nodus-map-comparison-chevron nodus-map-icon-font" />
+            </ui:VisualElement>
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="MapPins" picking-mode="Ignore" class="nodus-map-pins" />
@@ -41,19 +44,21 @@
                 <ui:Button name="BridgeButton" text="" class="nodus-map-icon-button nodus-map-icon-font" />
                 <ui:Button name="HomeButton" text="" class="nodus-map-icon-button nodus-map-icon-font" />
                 <ui:Button name="SatelliteButton" text="" class="nodus-map-icon-button nodus-map-icon-font" />
-                <ui:Button name="InfoToggleButton" text="" class="nodus-map-icon-button nodus-map-icon-font" />
+                <ui:Button name="InfoToggleButton" text="i" class="nodus-map-icon-button nodus-map-info-toggle">
+                    <ui:VisualElement name="InfoToggleSlash" picking-mode="Ignore" class="nodus-map-info-toggle-slash" />
+                </ui:Button>
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="InfoPanel" class="nodus-map-info">
-            <ui:VisualElement class="nodus-map-heading">
+            <ui:VisualElement class="nodus-map-heading nodus-map-info-heading">
                 <ui:Label name="InfoTitle" text="" class="nodus-map-info-title" />
-                <ui:VisualElement class="nodus-map-info-nav">
-                    <ui:Button name="PreviousInfoButton" text="" class="nodus-map-header-close nodus-map-icon-font" />
-                    <ui:Button name="NextInfoButton" text="" class="nodus-map-header-close nodus-map-icon-font" />
-                    <ui:Button name="CloseInfoButton" text="" class="nodus-map-header-close nodus-map-icon-font" />
-                </ui:VisualElement>
+                <ui:Button name="CloseInfoButton" text="" class="nodus-map-header-close nodus-map-icon-font" />
             </ui:VisualElement>
-            <ui:Label name="InfoDescription" text="" class="nodus-map-description" />
+            <ui:Label name="InfoDescription" text="" class="nodus-map-description nodus-map-info-description" />
+            <ui:VisualElement class="nodus-map-info-footer">
+                <ui:Button name="PreviousInfoButton" text="" class="nodus-map-button nodus-map-step nodus-map-icon-font" />
+                <ui:Button name="NextInfoButton" text="" class="nodus-map-button nodus-map-step nodus-map-icon-font" />
+            </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

@@ -106,8 +106,11 @@
     position: absolute;
     right: 26px;
     bottom: 22px;
-    width: 300px;
-    max-width: 85%;
+    width: 340px;
+    max-width: 92%;
+    height: auto;
+    min-width: 0;
+    max-height: 70%;
     padding: 16px;
     background-color: var(--nodus-surface);
     border-width: 1px;
@@ -119,6 +122,23 @@
     color: var(--nodus-primary);
     -unity-font-style: bold;
     flex-grow: 1;
+    flex-shrink: 1;
+    min-width: 0;
+    white-space: normal;
+    margin-right: 8px;
+}
+.nodus-map-info .nodus-map-header-close {
+    flex-shrink: 0;
+}
+.nodus-map-info-description {
+    white-space: normal;
+    flex-shrink: 1;
+}
+.nodus-map-info-footer {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 12px;
 }
 .nodus-map-link { background-color: rgba(0,0,0,0); border-width: 0; color: var(--nodus-primary); padding: 2px; font-size: var(--nodus-font-small); }
 .nodus-map-comparison-overlay { position: absolute; left: 0; right: 0; top: 0; bottom: 0; }
@@ -134,8 +154,9 @@
 }
 .nodus-map-comparison-handle {
     position: absolute;
-    left: -18px;
-    top: 46%;
+    left: -17px;
+    top: 50%;
+    margin-top: -18px;
     width: 36px;
     height: 36px;
     background-color: var(--nodus-surface);
@@ -143,7 +164,15 @@
     border-width: 2px;
     border-color: var(--nodus-primary);
     border-radius: 18px;
-    font-size: 18px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.nodus-map-comparison-chevron {
+    width: 10px;
+    height: 28px;
+    padding: 0;
+    font-size: 20px;
     -unity-text-align: middle-center;
 }
 
@@ -154,7 +183,6 @@
     top: 0;
     bottom: 0;
 }
- .nodus-map-info-nav { flex-direction: row; align-items: center; margin-left: 8px; }
 .nodus-map-pin {
     position: absolute;
     width: 34px;
@@ -178,3 +206,19 @@
 .nodus-map-pin--old.nodus-map-selected { background-color: #C48335; }
 .nodus-map-pin--new.nodus-map-selected { background-color: #168F84; }
 .nodus-map-pin--phase.nodus-map-selected { background-color: #8558B8; }
+
+.nodus-map-info-toggle {
+    -unity-font-definition: url("/Assets/UI/Fonts/Roboto-Regular SDF.asset");
+    -unity-font-style: bold;
+    font-size: 19px;
+    -unity-text-align: middle-center;
+}
+.nodus-map-info-toggle-slash {
+    position: absolute;
+    width: 2px;
+    height: 27px;
+    left: 17px;
+    top: 5px;
+    background-color: var(--nodus-text);
+    rotate: 45deg;
+}
