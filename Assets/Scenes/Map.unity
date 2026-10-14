@@ -266,6 +266,7 @@ GameObject:
   m_Component:
   - component: {fileID: 658900030}
   - component: {fileID: 658900029}
+  - component: {fileID: 658900031}
   m_Layer: 0
   m_Name: Map Sun
   m_TagString: Untagged
@@ -353,6 +354,35 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &658900031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658900028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_CustomShadowLayers: 0
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
 --- !u!1 &1054022292
 GameObject:
   m_ObjectHideFlags: 0
@@ -396,9 +426,11 @@ MonoBehaviour:
   routeMaterial: {fileID: 2100000, guid: 04690b1e8f83a324db98f20889e21c72, type: 2}
   longitude: 13.44556
   latitude: 52.50194
-  zoom: 18.5
-  minZoom: 17.5
-  maxZoom: 19
+  zoom: 17
+  minZoom: 14
+  maxZoom: 22
+  bridgeSouthwest: {x: 13.445, y: 52.5014}
+  bridgeNortheast: {x: 13.4461, y: 52.5025}
 --- !u!114 &1054022294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -415,7 +447,7 @@ MonoBehaviour:
   adjustToGameObject: {fileID: 0}
   distance: 290
   maxRotationX: 60
-  rotation: {x: 18, y: 0}
+  rotation: {x: 55, y: -35}
   speed: {x: 0.5, y: 0.5}
   lockTilt: 0
   lockPan: 0
