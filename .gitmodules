@@ -16,3 +16,6 @@
 [submodule "Packages/com.morean.online-maps"]
 	path = Packages/com.morean.online-maps
 	url = https://github.com/MoreanGmbH/OnlineMaps.git
+[submodule "Packages/com.nodus.maps"]
+	path = Packages/com.nodus.maps
+	url = https://github.com/MoreanGmbH/Nodus.Maps.git
