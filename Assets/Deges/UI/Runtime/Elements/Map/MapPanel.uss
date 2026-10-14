@@ -1,0 +1,180 @@
+.nodus-map-root {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+.nodus-map-controls {
+    position: absolute;
+    left: 26px;
+    right: 26px;
+    bottom: 22px;
+    flex-direction: row;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+.nodus-map-actions {
+    flex-direction: row;
+    align-items: center;
+    flex-shrink: 0;
+}
+.nodus-map-actions--with-panel { margin-left: 10px; }
+.nodus-map-icon-font {
+    -unity-font-definition: url("/Assets/UI/Fonts/MaterialIcons-Regular SDF.asset");
+}
+.nodus-map-icon-button {
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    margin-right: 8px;
+    background-color: var(--nodus-surface);
+    color: var(--nodus-text);
+    border-width: 1px;
+    border-color: var(--nodus-border);
+    border-radius: 8px;
+    font-size: 22px;
+    -unity-text-align: middle-center;
+}
+.nodus-map-icon-button:hover { background-color: var(--nodus-primary-soft); }
+.nodus-map-panel {
+    width: 330px;
+    flex-shrink: 1;
+    min-width: 230px;
+    max-width: 85%;
+    padding: 18px;
+    background-color: var(--nodus-surface);
+    color: var(--nodus-text);
+    border-width: 1px;
+    border-color: var(--nodus-border);
+    border-radius: var(--nodus-radius);
+}
+.nodus-map-heading { flex-direction: row; align-items: center; justify-content: space-between; }
+.nodus-map-title {
+    font-size: var(--nodus-font-title);
+    color: var(--nodus-primary);
+    -unity-font-style: bold;
+    flex-grow: 1;
+}
+.nodus-map-header-close {
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    background-color: rgba(0,0,0,0);
+    color: var(--nodus-text);
+    border-width: 0;
+    font-size: 20px;
+    -unity-text-align: middle-center;
+}
+.nodus-map-description {
+    font-size: var(--nodus-font-small);
+    color: var(--nodus-text-muted);
+    white-space: normal;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.nodus-map-tabs { flex-direction: row; margin-top: 8px; margin-bottom: 8px; }
+.nodus-map-button {
+    height: 34px;
+    min-height: 34px;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: var(--nodus-surface-muted);
+    color: var(--nodus-text);
+    border-width: 1px;
+    border-color: var(--nodus-border);
+    border-radius: 7px;
+    font-size: var(--nodus-font-small);
+    -unity-text-align: middle-center;
+}
+.nodus-map-button:hover { background-color: var(--nodus-primary-soft); }
+.nodus-map-selected { background-color: var(--nodus-primary); border-color: var(--nodus-primary); color: #FFFFFF; }
+.nodus-map-selected:hover { background-color: var(--nodus-primary-dark); color: #FFFFFF; }
+.nodus-map-tab { flex-grow: 1; }
+.nodus-map-tab-first { margin-right: 7px; }
+.nodus-map-tab-content { margin-top: 4px; }
+.nodus-map-slider { margin-top: 10px; margin-bottom: 8px; min-height: 28px; }
+.nodus-map-modes { flex-direction: row; margin-top: 4px; }
+.nodus-map-mode { flex-grow: 1; }
+.nodus-map-mode-middle { margin-left: 7px; margin-right: 7px; }
+.nodus-map-phase-index { font-size: var(--nodus-font-small); color: var(--nodus-primary); }
+.nodus-map-phase-title { font-size: var(--nodus-font-body); -unity-font-style: bold; color: var(--nodus-text); margin-top: 6px; }
+.nodus-map-stepper { flex-direction: row; justify-content: flex-end; margin-top: 8px; }
+.nodus-map-step { width: 40px; font-size: 25px; padding: 0; margin-left: 8px; }
+.nodus-map-info {
+    position: absolute;
+    right: 26px;
+    bottom: 22px;
+    width: 300px;
+    max-width: 85%;
+    padding: 16px;
+    background-color: var(--nodus-surface);
+    border-width: 1px;
+    border-color: var(--nodus-border);
+    border-radius: var(--nodus-radius);
+}
+.nodus-map-info-title {
+    font-size: var(--nodus-font-title);
+    color: var(--nodus-primary);
+    -unity-font-style: bold;
+    flex-grow: 1;
+}
+.nodus-map-link { background-color: rgba(0,0,0,0); border-width: 0; color: var(--nodus-primary); padding: 2px; font-size: var(--nodus-font-small); }
+.nodus-map-comparison-overlay { position: absolute; left: 0; right: 0; top: 0; bottom: 0; }
+.nodus-map-comparison-divider {
+    position: absolute;
+    top: 114px;
+    bottom: 18px;
+    width: 2px;
+    background-color: #FFFFFF;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-color: var(--nodus-primary);
+}
+.nodus-map-comparison-handle {
+    position: absolute;
+    left: -18px;
+    top: 46%;
+    width: 36px;
+    height: 36px;
+    background-color: var(--nodus-surface);
+    color: var(--nodus-primary);
+    border-width: 2px;
+    border-color: var(--nodus-primary);
+    border-radius: 18px;
+    font-size: 18px;
+    -unity-text-align: middle-center;
+}
+
+.nodus-map-pins {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+ .nodus-map-info-nav { flex-direction: row; align-items: center; margin-left: 8px; }
+.nodus-map-pin {
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    border-width: 2px;
+    border-color: #FFFFFF;
+    border-radius: 17px;
+    background-color: var(--nodus-primary);
+    color: #FFFFFF;
+    font-size: 19px;
+    -unity-text-align: middle-center;
+    -unity-font-definition: url("/Assets/UI/Fonts/Roboto-Regular SDF.asset");
+    -unity-font-style: bold;
+}
+.nodus-map-pin:hover { border-color: var(--nodus-primary); }
+.nodus-map-pin--old { background-color: #C48335; }
+.nodus-map-pin--new { background-color: #168F84; }
+.nodus-map-pin--phase { background-color: #8558B8; }
+.nodus-map-pin.nodus-map-selected { border-color: #FFDA67; border-width: 4px; }
+.nodus-map-pin--old.nodus-map-selected { background-color: #C48335; }
+.nodus-map-pin--new.nodus-map-selected { background-color: #168F84; }
+.nodus-map-pin--phase.nodus-map-selected { background-color: #8558B8; }

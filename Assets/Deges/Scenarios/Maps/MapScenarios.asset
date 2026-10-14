@@ -10,13 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1ef6ba58423b44e0ae992b7cece8f386, type: 3}
-  m_Name: AllScenarios
-  m_EditorClassIdentifier: 
+  m_Name: MapScenarios
+  m_EditorClassIdentifier: Nodus.ECS::Nodus.ECS.ScenarioContainer
   OverrideWaitFrames: 1
-  WaitFrames: 100
+  WaitFrames: 90
   OverrideScreenshot: 1
   CaptureScreenshot: 1
   Scenarios:
-  - {fileID: 11400000, guid: 0b954459df394056aa0b96b21abec238, type: 2}
-  - {fileID: 11400000, guid: 9bd177a1741d4ed1871d103946cecd74, type: 2}
-  - {fileID: 11400000, guid: a076de554fe84a6e95144546de41cb05, type: 2}
+  - {fileID: 11400000, guid: d47782d68d06e5f44bb0ad041ac5a07a, type: 2}
+  - {fileID: 11400000, guid: 2b95a1ca0577f334bae9b46b0c405069, type: 2}
+  - {fileID: 11400000, guid: 76ddb3710d63fd5489835dc84f34efd6, type: 2}
+  - {fileID: 11400000, guid: 7d390356fc0e902448ac8ec081f224cb, type: 2}

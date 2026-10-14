@@ -54,6 +54,306 @@ MonoBehaviour:
     m_Localized: Teilen Sie uns Ihre Meinung zum Projekt mit.
     m_Metadata:
       m_Items: []
+  - m_Id: 890988112699392
+    m_Localized: "Oberbaumbr\xFCcke"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 890988154642432
+    m_Localized: Bauphasen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 890988154642433
+    m_Localized: "Zur\xFCck"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 890988158836736
+    m_Localized: Weiter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 890988158836737
+    m_Localized: Startansicht
+    m_Metadata:
+      m_Items: []
+  - m_Id: 890988158836738
+    m_Localized: "Stra\xDFenkarte"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 890988158836739
+    m_Localized: Satellitenansicht
+    m_Metadata:
+      m_Items: []
+  - m_Id: 890988158836740
+    m_Localized: "Schlie\xDFen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 890988158836741
+    m_Localized: "Br\xFCckenerneuerung"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 890988158836742
+    m_Localized: "Entdecken Sie den Neubau der Br\xFCcke in vier Bauphasen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 890988158836743
+    m_Localized: Baustelle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 890988158836744
+    m_Localized: "Die Baustelle wird f\xFCr den Br\xFCckenneubau vorbereitet."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 890988158836745
+    m_Localized: Baustellenzufahrt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 890988158836746
+    m_Localized: "Tempor\xE4re Zufahrt f\xFCr Baufahrzeuge."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 890988158836747
+    m_Localized: Baustelleneinrichtung
+    m_Metadata:
+      m_Items: []
+  - m_Id: 890988158836748
+    m_Localized: "Der Arbeitsbereich wird gesichert und f\xFCr den Bau vorbereitet."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 890988158836749
+    m_Localized: "Gr\xFCndung"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 890988158836750
+    m_Localized: "Fundamente und Br\xFCckenpfeiler werden errichtet."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 890988158836751
+    m_Localized: "Br\xFCcken\xFCberbau"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 890988158836752
+    m_Localized: "Der \xDCberbau wird montiert und in seine Position gehoben."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 890988158836753
+    m_Localized: "Fertige Br\xFCcke"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 890988158836754
+    m_Localized: "Die neue Br\xFCcke ist fertiggestellt und f\xFCr den Verkehr freigegeben."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 890988158836755
+    m_Localized: Bauphase {0} von 4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 908186587815936
+    m_Localized: "Beispielhaftes Erneuerungskonzept in Berlin \u2013 keine aktuelle Bauma\xDFnahme."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 908186625564672
+    m_Localized: "Oberbaumbr\xFCcke erkunden"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 908186625564673
+    m_Localized: "Br\xFCcken vergleichen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 908186625564674
+    m_Localized: "Bewegen Sie die Trennlinie um die alte und die neue Br\xFCcke zu vergleichen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 908186625564675
+    m_Localized: Bestand
+    m_Metadata:
+      m_Items: []
+  - m_Id: 908186625564676
+    m_Localized: Vergleich
+    m_Metadata:
+      m_Items: []
+  - m_Id: 908186625564677
+    m_Localized: Neubau
+    m_Metadata:
+      m_Items: []
+  - m_Id: 908186625564678
+    m_Localized: "Bestehende Br\xFCcke"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 908186625564679
+    m_Localized: "Die schmalere bestehende Br\xFCcke wird ersetzt."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 908186625564680
+    m_Localized: "Neue Br\xFCcke"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 908186625564681
+    m_Localized: "Die neue Br\xFCcke bietet eine breitere Fahrbahn und moderne Schutzeinrichtungen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 918496480649216
+    m_Localized: "Verkehrsf\xFChrung"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 918496480649217
+    m_Localized: "Hier ist die Verkehrsf\xFChrung an der Br\xFCcke dargestellt. Beachten Sie die aktuelle Beschilderung."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 918496480649218
+    m_Localized: "Tempor\xE4re Umleitung"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 918496480649219
+    m_Localized: "W\xE4hrend der Bauarbeiten kann der Verkehr um die Baustelle gef\xFChrt werden. Orange Pfeile zeigen die alternative Route."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 918496480649220
+    m_Localized: "\xC4nderungen im Nahverkehr"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 918496484843520
+    m_Localized: "Haltestellen und Linien in Br\xFCckenn\xE4he k\xF6nnen sich \xE4ndern. Das Haltestellensymbol zeigt eine beispielhafte Ersatzhaltestelle."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 918496484843521
+    m_Localized: "Fu\xDFg\xE4ngerwege"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 918496484843522
+    m_Localized: "Ein markierter Fu\xDFg\xE4nger\xFCberweg h\xE4lt das Gebiet erreichbar. Nutzen Sie die ausgewiesenen Fu\xDFwege."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 918496484843523
+    m_Localized: Radverkehr
+    m_Metadata:
+      m_Items: []
+  - m_Id: 918496484843524
+    m_Localized: "Entlang der erneuerten Br\xFCcke ist eine Radverbindung vorgesehen. Gr\xFCne Pfeile zeigen die Fahrtrichtung."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 918496484843525
+    m_Localized: "L\xE4rm und Messungen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 918496484843526
+    m_Localized: "Baul\xE4rm wird an benachbarten Stra\xDFen \xFCberwacht. Der Sensor veranschaulicht einen Messpunkt."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 918496484843527
+    m_Localized: Baustellenzufahrt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 918496484843528
+    m_Localized: "Baustellenlieferungen erfolgen \xFCber ausgewiesene Zufahrten, getrennt von Fu\xDFwegen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 918496484843529
+    m_Localized: Sicherheit an der Baustelle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 918496484843530
+    m_Localized: "Absperrungen trennen die Baustelle von \xF6ffentlichen Wegen. Halten Sie die Zufahrten frei."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 918496484843531
+    m_Localized: "\xC4nderungen beim Parken"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 918496484843532
+    m_Localized: "Einige Stellpl\xE4tze k\xF6nnen vor\xFCbergehend entfallen. Ersatzstellpl\xE4tze sind in der N\xE4he gekennzeichnet."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 926187311652864
+    m_Localized: Informationen ein- oder ausblenden
+    m_Metadata:
+      m_Items: []
+  - m_Id: 926187311652865
+    m_Localized: Schiffsverkehr auf der Spree
+    m_Metadata:
+      m_Items: []
+  - m_Id: 926187311652866
+    m_Localized: "Ausflugsschiffe passieren die Oberbaumbr\xFCcke. Das Schiff kennzeichnet die Fahrrinne; die Durchfahrtsh\xF6he ist schematisch."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 926187311652867
+    m_Localized: "Radverkehr an der Oberbaumbr\xFCcke"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 926187324235776
+    m_Localized: Hier verbindet der Radverkehr Kreuzberg mit Friedrichshain. Die Linie veranschaulicht die bisherige Querung.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 926187324235777
+    m_Localized: Durchgehende Radverbindung
+    m_Metadata:
+      m_Items: []
+  - m_Id: 926187324235778
+    m_Localized: "Das Konzept zeigt eine klar gekennzeichnete Radverbindung \xFCber die Br\xFCcke und ihre Zufahrten."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 926187324235779
+    m_Localized: "U1 und U3 \xFCber der Spree"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 926187324235780
+    m_Localized: Die Hochbahntrasse bleibt im Entwurf sichtbar. Dies sind keine aktuellen Verkehrsmeldungen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 926187324235781
+    m_Localized: "Fu\xDFweg w\xE4hrend der Einrichtung"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 926187324235782
+    m_Localized: "Ein beispielhaft ausgeschilderter Fu\xDFweg verbindet die Kreuzberger Seite mit der Br\xFCcke."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 926187324235783
+    m_Localized: Abgrenzung der Baustelle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 926187324235784
+    m_Localized: "Tempor\xE4re Absperrungen trennen im Beispiel die Baufl\xE4che von Br\xFCckenzufahrten und Gehwegen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 926187324235785
+    m_Localized: "Materialanlieferung \xFCber die Spree"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 926187324235786
+    m_Localized: "Ein Arbeitsschiff zeigt, wie Br\xFCckenbauteile \xFCber den Wasserweg angeliefert werden k\xF6nnten."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 926187324235787
+    m_Localized: "L\xE4rmmessungen in der Nachbarschaft"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 926187324235788
+    m_Localized: "Ein beispielhafter Messpunkt auf Friedrichshainer Seite steht f\xFCr L\xE4rmkontrollen bei Gr\xFCndungsarbeiten."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 926187324235789
+    m_Localized: "Tempor\xE4re Verkehrsf\xFChrung"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 926187324235790
+    m_Localized: "Die animierte orange Linie zeigt eine m\xF6gliche Umleitung im Bereich Schlesische Stra\xDFe und Warschauer Stra\xDFe. Keine reale Verkehrsregelung."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 926187324235791
+    m_Localized: Radverbindung wieder offen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 926187324235792
+    m_Localized: In der letzten beispielhaften Phase nutzen Radfahrende wieder eine durchgehend markierte Verbindung.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 926187324235793
+    m_Localized: U-Bahn-Verbindung in Betrieb
+    m_Metadata:
+      m_Items: []
+  - m_Id: 926187324235794
+    m_Localized: "Die fertige Konzeptvariante erh\xE4lt die U1/U3-Verbindung zwischen Schlesischem Tor und Warschauer Stra\xDFe."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

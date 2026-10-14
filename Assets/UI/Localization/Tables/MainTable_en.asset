@@ -54,6 +54,306 @@ MonoBehaviour:
     m_Localized: Tell us what you think about the project.
     m_Metadata:
       m_Items: []
+  - m_Id: 890988112699392
+    m_Localized: "Oberbaumbr\xFCcke"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 890988154642432
+    m_Localized: Construction phases
+    m_Metadata:
+      m_Items: []
+  - m_Id: 890988154642433
+    m_Localized: Previous
+    m_Metadata:
+      m_Items: []
+  - m_Id: 890988158836736
+    m_Localized: Next
+    m_Metadata:
+      m_Items: []
+  - m_Id: 890988158836737
+    m_Localized: Home
+    m_Metadata:
+      m_Items: []
+  - m_Id: 890988158836738
+    m_Localized: Street map
+    m_Metadata:
+      m_Items: []
+  - m_Id: 890988158836739
+    m_Localized: Satellite view
+    m_Metadata:
+      m_Items: []
+  - m_Id: 890988158836740
+    m_Localized: Close
+    m_Metadata:
+      m_Items: []
+  - m_Id: 890988158836741
+    m_Localized: Bridge renewal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 890988158836742
+    m_Localized: Explore the new bridge in four construction phases.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 890988158836743
+    m_Localized: Construction site
+    m_Metadata:
+      m_Items: []
+  - m_Id: 890988158836744
+    m_Localized: The site is prepared for the bridge replacement.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 890988158836745
+    m_Localized: Site access
+    m_Metadata:
+      m_Items: []
+  - m_Id: 890988158836746
+    m_Localized: Temporary access for construction vehicles.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 890988158836747
+    m_Localized: Site setup
+    m_Metadata:
+      m_Items: []
+  - m_Id: 890988158836748
+    m_Localized: The working area is secured and prepared for construction.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 890988158836749
+    m_Localized: Foundations
+    m_Metadata:
+      m_Items: []
+  - m_Id: 890988158836750
+    m_Localized: The supporting foundations and bridge piers are built.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 890988158836751
+    m_Localized: Bridge deck
+    m_Metadata:
+      m_Items: []
+  - m_Id: 890988158836752
+    m_Localized: The deck is assembled and lifted into position.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 890988158836753
+    m_Localized: Completed bridge
+    m_Metadata:
+      m_Items: []
+  - m_Id: 890988158836754
+    m_Localized: The new bridge is complete and open to traffic.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 890988158836755
+    m_Localized: Phase {0} of 4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 908186587815936
+    m_Localized: "Illustrative renewal concept in Berlin \u2013 not an active construction notice."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 908186625564672
+    m_Localized: "Explore Oberbaumbr\xFCcke"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 908186625564673
+    m_Localized: Compare bridges
+    m_Metadata:
+      m_Items: []
+  - m_Id: 908186625564674
+    m_Localized: Drag the divider to compare the existing and new bridges.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 908186625564675
+    m_Localized: Existing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 908186625564676
+    m_Localized: Compare
+    m_Metadata:
+      m_Items: []
+  - m_Id: 908186625564677
+    m_Localized: New
+    m_Metadata:
+      m_Items: []
+  - m_Id: 908186625564678
+    m_Localized: Existing bridge
+    m_Metadata:
+      m_Items: []
+  - m_Id: 908186625564679
+    m_Localized: The narrower existing bridge will be replaced.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 908186625564680
+    m_Localized: New bridge
+    m_Metadata:
+      m_Items: []
+  - m_Id: 908186625564681
+    m_Localized: The new bridge offers a wider deck and modern safety barriers.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 918496480649216
+    m_Localized: Traffic flow
+    m_Metadata:
+      m_Items: []
+  - m_Id: 918496480649217
+    m_Localized: Lane arrangements around the bridge are shown here. Follow the current road signs.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 918496480649218
+    m_Localized: Temporary traffic diversion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 918496480649219
+    m_Localized: During construction, traffic can be redirected around the work area. Orange arrows illustrate the alternative route.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 918496480649220
+    m_Localized: Public transport changes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 918496484843520
+    m_Localized: Bus stops and service routes near the bridge may change. The stop symbol marks an example replacement stop.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 918496484843521
+    m_Localized: Pedestrian access
+    m_Metadata:
+      m_Items: []
+  - m_Id: 918496484843522
+    m_Localized: A marked pedestrian crossing keeps the area accessible. Follow the designated walking route.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 918496484843523
+    m_Localized: Cycle route
+    m_Metadata:
+      m_Items: []
+  - m_Id: 918496484843524
+    m_Localized: A cycle route is planned alongside the renewed bridge. The green arrows mark its direction.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 918496484843525
+    m_Localized: Noise and monitoring
+    m_Metadata:
+      m_Items: []
+  - m_Id: 918496484843526
+    m_Localized: Construction noise is monitored near neighbouring streets. The sensor illustrates a monitoring location.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 918496484843527
+    m_Localized: Construction vehicle access
+    m_Metadata:
+      m_Items: []
+  - m_Id: 918496484843528
+    m_Localized: Construction deliveries use designated access points, separated from pedestrian routes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 918496484843529
+    m_Localized: Site safety
+    m_Metadata:
+      m_Items: []
+  - m_Id: 918496484843530
+    m_Localized: Barriers separate the work zone from public routes. Keep the access area clear.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 918496484843531
+    m_Localized: Parking changes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 918496484843532
+    m_Localized: Some parking spaces may be temporarily unavailable. Alternative spaces are marked nearby.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 926187311652864
+    m_Localized: Show or hide local information
+    m_Metadata:
+      m_Items: []
+  - m_Id: 926187311652865
+    m_Localized: Spree boat passage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 926187311652866
+    m_Localized: "Sightseeing boats pass beneath Oberbaumbr\xFCcke. The vessel marks the river corridor; clearance is illustrative."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 926187311652867
+    m_Localized: "Cycle route at Oberbaumbr\xFCcke"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 926187324235776
+    m_Localized: Cyclists connect Kreuzberg and Friedrichshain here. The line shows the existing crossing as a concept.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 926187324235777
+    m_Localized: Continuous cycle connection
+    m_Metadata:
+      m_Items: []
+  - m_Id: 926187324235778
+    m_Localized: The concept shows a clearly marked cycle connection across the bridge and its approaches.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 926187324235779
+    m_Localized: U1 and U3 above the Spree
+    m_Metadata:
+      m_Items: []
+  - m_Id: 926187324235780
+    m_Localized: The elevated U-Bahn route stays visible in the redesigned bridge concept. Service information is not live.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 926187324235781
+    m_Localized: Pedestrian route during site setup
+    m_Metadata:
+      m_Items: []
+  - m_Id: 926187324235782
+    m_Localized: An illustrative signed walking corridor connects the Kreuzberg-side approach with the bridge.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 926187324235783
+    m_Localized: Work-zone separation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 926187324235784
+    m_Localized: Temporary barriers would separate the construction area from the bridge approaches and public footways.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 926187324235785
+    m_Localized: Materials delivered from the Spree
+    m_Metadata:
+      m_Items: []
+  - m_Id: 926187324235786
+    m_Localized: A work barge illustrates how some bridge components could be brought to the site by water.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 926187324235787
+    m_Localized: Noise monitoring near neighbours
+    m_Metadata:
+      m_Items: []
+  - m_Id: 926187324235788
+    m_Localized: An example sensor on the Friedrichshain side represents measurements during foundation work.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 926187324235789
+    m_Localized: Temporary road diversion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 926187324235790
+    m_Localized: "The animated orange path illustrates a potential diversion on the Schlesische Stra\xDFe / Warschauer Stra\xDFe approaches. Not a real traffic order."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 926187324235791
+    m_Localized: Cycle connection reopened
+    m_Metadata:
+      m_Items: []
+  - m_Id: 926187324235792
+    m_Localized: In the final illustrative stage, cyclists use a continuous marked connection across the renewed bridge.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 926187324235793
+    m_Localized: U-Bahn crossing in operation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 926187324235794
+    m_Localized: "The completed scenario retains the U1/U3 crossing between Schlesisches Tor and Warschauer Stra\xDFe."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

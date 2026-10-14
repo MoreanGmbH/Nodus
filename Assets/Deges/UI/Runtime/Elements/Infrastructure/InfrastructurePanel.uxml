@@ -1,6 +1,7 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:loc="UnityEngine.Localization" xmlns:nodus="Nodus.UI" editor-extension-mode="False">
     <Style src="project://database/Assets/Deges/UI/Runtime/Elements/Styles.uss?fileID=7433441132597879392&amp;guid=c6b1db6856ef4f14d9bec883450fa92c&amp;type=3#Styles"/>
     <ui:VisualElement name="App" class="nodus-root">
+        <ui:VisualElement name="MapPanels" picking-mode="Ignore" class="nodus-stack"/>
         <ui:VisualElement name="Toolbar" class="nodus-toolbar nodus-toolbar--responsive">
             <ui:Label text="Infrastructure" class="nodus-toolbar__brand">
                 <Bindings>
@@ -18,11 +19,11 @@
             </ui:VisualElement>
             <ui:VisualElement class="nodus-toolbar__settings">
                 <ui:VisualElement class="nodus-select-wrap">
-                    <nodus:EntitiesDropdown name="LanguageDropdown" options="project://database/Assets/Deges/UI/Runtime/Elements/Infrastructure/LocaleOptions.asset?fileID=11400000&amp;guid=ffd7b35c14404a7985d7f31e85dfce94&amp;type=2#LocaleOptions" class="nodus-select"/>
+                    <nodus:EntitiesDropdown name="LanguageDropdown" options="project://database/Assets/Deges/UI/Runtime/Elements/Infrastructure/Locale/LocaleOptions.asset?fileID=11400000&amp;guid=ffd7b35c14404a7985d7f31e85dfce94&amp;type=2#LocaleOptions" class="nodus-select"/>
                     <ui:Label text="" picking-mode="Ignore" class="nodus-select-icon"/>
                 </ui:VisualElement>
-                <ui:VisualElement class="nodus-select-wrap">
-                    <nodus:EntitiesDropdown name="ThemeDropdown" options="project://database/Assets/Deges/UI/Runtime/Elements/Infrastructure/ThemeOptions.asset?fileID=11400000&amp;guid=48a8b501084b42e189ec919a9bea0edb&amp;type=2#ThemeOptions" class="nodus-select"/>
+                <ui:VisualElement class="nodus-select-wrap nodus-select-wrap--second">
+                    <nodus:EntitiesDropdown name="ThemeDropdown" options="project://database/Assets/Deges/UI/Runtime/Elements/Infrastructure/Theme/ThemeOptions.asset?fileID=11400000&amp;guid=48a8b501084b42e189ec919a9bea0edb&amp;type=2#ThemeOptions" class="nodus-select"/>
                     <ui:Label text="" picking-mode="Ignore" class="nodus-select-icon"/>
                 </ui:VisualElement>
             </ui:VisualElement>

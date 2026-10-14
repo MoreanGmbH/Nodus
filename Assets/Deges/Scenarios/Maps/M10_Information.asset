@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5a46f4ae821516ab87abe9c20fe7581, type: 3}
+  m_Name: M10_Information
+  m_EditorClassIdentifier: Nodus.ECS::Nodus.ECS.Scenario
+  OverrideWaitFrames: 0
+  WaitFrames: 2
+  OverrideScreenshot: 0
+  CaptureScreenshot: 0
+  Steps:
+  - Entities: {fileID: 11400000, guid: b728d73a5ad3cdd41a0d0d990e991755, type: 2}
+  - Entities: {fileID: 11400000, guid: 4754cf92c436f70479aeff4323ca52b8, type: 2}
+  - Entities: {fileID: 11400000, guid: 45009ee92eb7a224ab49802f09945ef9, type: 2}
+  - Entities: {fileID: 11400000, guid: 8eed76845bf1ae444beb4ac1dfb58d3f, type: 2}
+  - Entities: {fileID: 11400000, guid: bbf8609e160b414449ce7538bb54e669, type: 2}
+  - Entities: {fileID: 11400000, guid: 2ce3084722883ec498f87a5bd98eab90, type: 2}
+  - Entities: {fileID: 11400000, guid: 05dc9edcf35763f48abc6b4c9c8970e7, type: 2}
+  - Entities: {fileID: 11400000, guid: 67370bc36a6a77b4b989368ac56d300b, type: 2}
+  - Entities: {fileID: 11400000, guid: ff341d2221d17074caf56686286fe3ca, type: 2}
+  - Entities: {fileID: 11400000, guid: 2fbfbb5be0f7d034185e7651638b9b20, type: 2}
+  - Entities: {fileID: 11400000, guid: d6a50b233c08b384f96b8fbf217335a3, type: 2}
+  - Entities: {fileID: 11400000, guid: 296973da02742d7458babfc1796a66cc, type: 2}
+  - Entities: {fileID: 11400000, guid: 030c96b703f339e409c68de718c1f305, type: 2}
+  - Entities: {fileID: 11400000, guid: acaee1eb079e7ff4d9cee2d684c3f30d, type: 2}
+  - Entities: {fileID: 11400000, guid: cd0a208eeb36490429847ec43cb068db, type: 2}

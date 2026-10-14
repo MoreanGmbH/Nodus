@@ -27,6 +27,16 @@
         "com.unity.nuget.newtonsoft-json": "3.2.1"
       }
     },
+    "com.nodus.maps": {
+      "version": "file:com.nodus.maps",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.nodus.ecs": "0.3.0",
+        "com.nodus.navigation": "0.5.0",
+        "com.morean.online-maps": "5.0.0"
+      }
+    },
     "com.nodus.navigation": {
       "version": "file:com.nodus.navigation",
       "depth": 0,

@@ -8,3 +8,78 @@ Project.Title,253175176421376,Infrastructure,Infrastruktur
 Feedback.Description,0,Tell us what you think about the project.,Teilen Sie uns Ihre Meinung zum Projekt mit.
 Close,0,Close,Schließen
 Submit,0,Submit,Absenden
+Maps.Project,0,Oberbaumbrücke,Oberbaumbrücke
+Maps.Phases,0,Construction phases,Bauphasen
+Maps.Previous,0,Previous,Zurück
+Maps.Next,0,Next,Weiter
+Maps.Home,0,Home,Startansicht
+Maps.Street,0,Street map,Straßenkarte
+Maps.Satellite,0,Satellite view,Satellitenansicht
+Maps.Close,0,Close,Schließen
+Maps.POI.Bridge,0,Bridge renewal,Brückenerneuerung
+Maps.POI.Bridge.Detail,0,Explore the new bridge in four construction phases.,Entdecken Sie den Neubau der Brücke in vier Bauphasen.
+Maps.POI.Site,0,Construction site,Baustelle
+Maps.POI.Site.Detail,0,The site is prepared for the bridge replacement.,Die Baustelle wird für den Brückenneubau vorbereitet.
+Maps.POI.Access,0,Site access,Baustellenzufahrt
+Maps.POI.Access.Detail,0,Temporary access for construction vehicles.,Temporäre Zufahrt für Baufahrzeuge.
+Maps.Phase.0.Title,0,Site setup,Baustelleneinrichtung
+Maps.Phase.0.Description,0,The working area is secured and prepared for construction.,Der Arbeitsbereich wird gesichert und für den Bau vorbereitet.
+Maps.Phase.1.Title,0,Foundations,Gründung
+Maps.Phase.1.Description,0,The supporting foundations and bridge piers are built.,Fundamente und Brückenpfeiler werden errichtet.
+Maps.Phase.2.Title,0,Bridge deck,Brückenüberbau
+Maps.Phase.2.Description,0,The deck is assembled and lifted into position.,Der Überbau wird montiert und in seine Position gehoben.
+Maps.Phase.3.Title,0,Completed bridge,Fertige Brücke
+Maps.Phase.3.Description,0,The new bridge is complete and open to traffic.,Die neue Brücke ist fertiggestellt und für den Verkehr freigegeben.
+Maps.Phase.Index,0,Phase {0} of 4,Bauphase {0} von 4
+Maps.Intro,0,Illustrative renewal concept in Berlin – not an active construction notice.,Beispielhaftes Erneuerungskonzept in Berlin – keine aktuelle Baumaßnahme.
+Maps.OpenBridge,0,Explore Oberbaumbrücke,Oberbaumbrücke erkunden
+Maps.Compare,0,Compare bridges,Brücken vergleichen
+Maps.Compare.Description,0,Drag the divider to compare the existing and new bridges.,Bewegen Sie die Trennlinie um die alte und die neue Brücke zu vergleichen.
+Maps.Compare.Existing,0,Existing,Bestand
+Maps.Compare.Split,0,Compare,Vergleich
+Maps.Compare.New,0,New,Neubau
+Maps.POI.Old,0,Existing bridge,Bestehende Brücke
+Maps.POI.Old.Detail,0,The narrower existing bridge will be replaced.,Die schmalere bestehende Brücke wird ersetzt.
+Maps.POI.New,0,New bridge,Neue Brücke
+Maps.POI.New.Detail,0,The new bridge offers a wider deck and modern safety barriers.,Die neue Brücke bietet eine breitere Fahrbahn und moderne Schutzeinrichtungen.
+Maps.Info.Traffic.Title,0,Traffic flow,Verkehrsführung
+Maps.Info.Traffic.Description,0,Lane arrangements around the bridge are shown here. Follow the current road signs.,Hier ist die Verkehrsführung an der Brücke dargestellt. Beachten Sie die aktuelle Beschilderung.
+Maps.Info.Detour.Title,0,Temporary traffic diversion,Temporäre Umleitung
+Maps.Info.Detour.Description,0,"During construction, traffic can be redirected around the work area. Orange arrows illustrate the alternative route.",Während der Bauarbeiten kann der Verkehr um die Baustelle geführt werden. Orange Pfeile zeigen die alternative Route.
+Maps.Info.Transit.Title,0,Public transport changes,Änderungen im Nahverkehr
+Maps.Info.Transit.Description,0,Bus stops and service routes near the bridge may change. The stop symbol marks an example replacement stop.,Haltestellen und Linien in Brückennähe können sich ändern. Das Haltestellensymbol zeigt eine beispielhafte Ersatzhaltestelle.
+Maps.Info.Walking.Title,0,Pedestrian access,Fußgängerwege
+Maps.Info.Walking.Description,0,A marked pedestrian crossing keeps the area accessible. Follow the designated walking route.,Ein markierter Fußgängerüberweg hält das Gebiet erreichbar. Nutzen Sie die ausgewiesenen Fußwege.
+Maps.Info.Cycling.Title,0,Cycle route,Radverkehr
+Maps.Info.Cycling.Description,0,A cycle route is planned alongside the renewed bridge. The green arrows mark its direction.,Entlang der erneuerten Brücke ist eine Radverbindung vorgesehen. Grüne Pfeile zeigen die Fahrtrichtung.
+Maps.Info.Noise.Title,0,Noise and monitoring,Lärm und Messungen
+Maps.Info.Noise.Description,0,Construction noise is monitored near neighbouring streets. The sensor illustrates a monitoring location.,Baulärm wird an benachbarten Straßen überwacht. Der Sensor veranschaulicht einen Messpunkt.
+Maps.Info.SiteAccess.Title,0,Construction vehicle access,Baustellenzufahrt
+Maps.Info.SiteAccess.Description,0,"Construction deliveries use designated access points, separated from pedestrian routes.","Baustellenlieferungen erfolgen über ausgewiesene Zufahrten, getrennt von Fußwegen."
+Maps.Info.Safety.Title,0,Site safety,Sicherheit an der Baustelle
+Maps.Info.Safety.Description,0,Barriers separate the work zone from public routes. Keep the access area clear.,Absperrungen trennen die Baustelle von öffentlichen Wegen. Halten Sie die Zufahrten frei.
+Maps.Info.Parking.Title,0,Parking changes,Änderungen beim Parken
+Maps.Info.Parking.Description,0,Some parking spaces may be temporarily unavailable. Alternative spaces are marked nearby.,Einige Stellplätze können vorübergehend entfallen. Ersatzstellplätze sind in der Nähe gekennzeichnet.
+Maps.InfosToggle,0,Show or hide local information,Informationen ein- oder ausblenden
+Maps.Info.old-river.Title,0,Spree boat passage,Schiffsverkehr auf der Spree
+Maps.Info.old-river.Description,0,Sightseeing boats pass beneath Oberbaumbrücke. The vessel marks the river corridor; clearance is illustrative.,Ausflugsschiffe passieren die Oberbaumbrücke. Das Schiff kennzeichnet die Fahrrinne; die Durchfahrtshöhe ist schematisch.
+Maps.Info.old-cycle.Title,0,Cycle route at Oberbaumbrücke,Radverkehr an der Oberbaumbrücke
+Maps.Info.old-cycle.Description,0,Cyclists connect Kreuzberg and Friedrichshain here. The line shows the existing crossing as a concept.,Hier verbindet der Radverkehr Kreuzberg mit Friedrichshain. Die Linie veranschaulicht die bisherige Querung.
+Maps.Info.new-cycle.Title,0,Continuous cycle connection,Durchgehende Radverbindung
+Maps.Info.new-cycle.Description,0,The concept shows a clearly marked cycle connection across the bridge and its approaches.,Das Konzept zeigt eine klar gekennzeichnete Radverbindung über die Brücke und ihre Zufahrten.
+Maps.Info.new-transit.Title,0,U1 and U3 above the Spree,U1 und U3 über der Spree
+Maps.Info.new-transit.Description,0,The elevated U-Bahn route stays visible in the redesigned bridge concept. Service information is not live.,Die Hochbahntrasse bleibt im Entwurf sichtbar. Dies sind keine aktuellen Verkehrsmeldungen.
+Maps.Info.p0-walking.Title,0,Pedestrian route during site setup,Fußweg während der Einrichtung
+Maps.Info.p0-walking.Description,0,An illustrative signed walking corridor connects the Kreuzberg-side approach with the bridge.,Ein beispielhaft ausgeschilderter Fußweg verbindet die Kreuzberger Seite mit der Brücke.
+Maps.Info.p0-barrier.Title,0,Work-zone separation,Abgrenzung der Baustelle
+Maps.Info.p0-barrier.Description,0,Temporary barriers would separate the construction area from the bridge approaches and public footways.,Temporäre Absperrungen trennen im Beispiel die Baufläche von Brückenzufahrten und Gehwegen.
+Maps.Info.p1-barge.Title,0,Materials delivered from the Spree,Materialanlieferung über die Spree
+Maps.Info.p1-barge.Description,0,A work barge illustrates how some bridge components could be brought to the site by water.,"Ein Arbeitsschiff zeigt, wie Brückenbauteile über den Wasserweg angeliefert werden könnten."
+Maps.Info.p1-noise.Title,0,Noise monitoring near neighbours,Lärmmessungen in der Nachbarschaft
+Maps.Info.p1-noise.Description,0,An example sensor on the Friedrichshain side represents measurements during foundation work.,Ein beispielhafter Messpunkt auf Friedrichshainer Seite steht für Lärmkontrollen bei Gründungsarbeiten.
+Maps.Info.p2-detour.Title,0,Temporary road diversion,Temporäre Verkehrsführung
+Maps.Info.p2-detour.Description,0,The animated orange path illustrates a potential diversion on the Schlesische Straße / Warschauer Straße approaches. Not a real traffic order.,Die animierte orange Linie zeigt eine mögliche Umleitung im Bereich Schlesische Straße und Warschauer Straße. Keine reale Verkehrsregelung.
+Maps.Info.p3-cycling.Title,0,Cycle connection reopened,Radverbindung wieder offen
+Maps.Info.p3-cycling.Description,0,"In the final illustrative stage, cyclists use a continuous marked connection across the renewed bridge.",In der letzten beispielhaften Phase nutzen Radfahrende wieder eine durchgehend markierte Verbindung.
+Maps.Info.p3-transit.Title,0,U-Bahn crossing in operation,U-Bahn-Verbindung in Betrieb
+Maps.Info.p3-transit.Description,0,The completed scenario retains the U1/U3 crossing between Schlesisches Tor and Warschauer Straße.,Die fertige Konzeptvariante erhält die U1/U3-Verbindung zwischen Schlesischem Tor und Warschauer Straße.

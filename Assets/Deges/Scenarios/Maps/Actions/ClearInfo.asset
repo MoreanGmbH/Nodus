@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cbe7fd17ff5442c9749e87b0a9d298d, type: 3}
+  m_Name: ClearInfo
+  m_EditorClassIdentifier: Nodus.ECS::Nodus.ECS.Definitions.Entities
+  Id: maps.ClearInfo
+  Store: Maps
+  Roots:
+  - {fileID: 236288002393198660}
+--- !u!114 &236288002393198660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a1037116ac0453885177c6905fb82e8, type: 3}
+  m_Name: ClearInfoEntity
+  m_EditorClassIdentifier: Nodus.ECS::Nodus.ECS.Definitions.Entity
+  Id: 
+  Store: 
+  Components:
+  - {fileID: 1772702964644512901}
+  Children: []
+--- !u!114 &1772702964644512901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afb764569a6341bcb0fadfa806b09ae1, type: 3}
+  m_Name: MapCommand
+  m_EditorClassIdentifier: Nodus.ECS::Nodus.ECS.Definitions.Component
+  Key: Nodus.Maps.MapCommand
+  Json: '{"Action":0,"Id":"","Message":"","Phase":0,"Longitude":0.0,"Latitude":0.0}'

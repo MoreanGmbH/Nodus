@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5a46f4ae821516ab87abe9c20fe7581, type: 3}
+  m_Name: M10_Compare
+  m_EditorClassIdentifier: Nodus.ECS::Nodus.ECS.Scenario
+  OverrideWaitFrames: 0
+  WaitFrames: 2
+  OverrideScreenshot: 0
+  CaptureScreenshot: 0
+  Steps:
+  - Entities: {fileID: 11400000, guid: cd0a208eeb36490429847ec43cb068db, type: 2}
+  - Entities: {fileID: 11400000, guid: b728d73a5ad3cdd41a0d0d990e991755, type: 2}
+  - Entities: {fileID: 11400000, guid: 44c4388550df0234595c97fec15f320c, type: 2}
+  - Entities: {fileID: 11400000, guid: 05dccba2df5516a45ade698ebc91c682, type: 2}
+  - Entities: {fileID: 11400000, guid: 4754cf92c436f70479aeff4323ca52b8, type: 2}
+  - Entities: {fileID: 11400000, guid: cd0a208eeb36490429847ec43cb068db, type: 2}

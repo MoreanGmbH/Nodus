@@ -20,30 +20,35 @@
 }
 
 .nodus-toolbar__settings {
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-end;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: center;
+    flex-shrink: 0;
     margin-left: auto;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
-/* The field width is measured from the longest translated choice in Systems.cs. */
 .nodus-select-wrap {
     position: relative;
     flex-direction: row;
     flex-grow: 0;
     flex-shrink: 0;
-    width: auto;
-    height: 36px;
-    margin-left: 10px;
-    margin-top: 4px;
-    margin-bottom: 4px;
+    width: 100%;
+    height: 28px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
+
+.nodus-select-wrap--second { margin-top: 6px; }
 
 .nodus-select {
     width: 100%;
-    height: 36px;
-    min-height: 36px;
+    height: 28px;
+    min-height: 28px;
     flex-grow: 0;
     flex-shrink: 0;
     min-width: 0;
@@ -55,15 +60,15 @@
     padding-right: 0;
     padding-top: 0;
     padding-bottom: 0;
-    font-size: var(--nodus-font-body);
+    font-size: 12px;
     color: var(--nodus-text);
 }
 
 .nodus-select .unity-base-popup-field__input,
 .nodus-select .unity-popup-field__input {
     width: 100%;
-    height: 36px;
-    min-height: 36px;
+    height: 28px;
+    min-height: 28px;
     flex-grow: 1;
     flex-shrink: 0;
     flex-direction: row;
@@ -71,9 +76,9 @@
     background-color: var(--nodus-surface-muted);
     border-width: 1px;
     border-color: var(--nodus-border);
-    border-radius: 8px;
-    padding-left: 12px;
-    padding-right: 38px;
+    border-radius: 6px;
+    padding-left: 8px;
+    padding-right: 27px;
 }
 
 .nodus-select:hover .unity-base-popup-field__input,
@@ -90,8 +95,12 @@
     white-space: nowrap;
     overflow: visible;
     -unity-text-align: middle-left;
-    font-size: var(--nodus-font-body);
+    font-size: 12px;
     color: var(--nodus-text);
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .nodus-select .unity-base-popup-field__arrow,
@@ -101,11 +110,11 @@
 
 .nodus-select-icon {
     position: absolute;
-    right: 10px;
+    right: 7px;
     top: 0;
     bottom: 0;
-    width: 20px;
-    font-size: 20px;
+    width: 15px;
+    font-size: 15px;
     color: var(--nodus-text);
     -unity-text-align: middle-center;
     -unity-font-definition: url("/Assets/UI/Fonts/MaterialIcons-Regular SDF.asset");

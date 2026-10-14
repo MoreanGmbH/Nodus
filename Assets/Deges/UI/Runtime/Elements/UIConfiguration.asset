@@ -18,7 +18,11 @@ MonoBehaviour:
   Views:
   - {fileID: 9197481963319205126, guid: 35bf7ee41de8b264587e46da591bec5e, type: 3}
   - {fileID: 9197481963319205126, guid: 4dd63a00b62b97646a64fe87bc506a01, type: 3}
+  - {fileID: 9197481963319205126, guid: 2cac8df30242039488427ceb1470a1cf, type: 3}
   Stacks:
   - Id: Main
     ContainerName: Panels
     Presentation: 0
+  - Id: Map
+    ContainerName: MapPanels
+    Presentation: 1
