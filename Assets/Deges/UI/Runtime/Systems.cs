@@ -24,6 +24,10 @@ namespace Deges.UI {
         static void Bind(VisualElement root, EntityStore store) {
             root.RegisterCallback<ClickEvent>(evt => {
                 if (evt.target is not VisualElement target) return;
+                if (target.name == "FeedbackBackdrop") {
+                    store.CreateEntity(new PopView { StackId = "Main" });
+                    return;
+                }
                 var button = target as Button ?? target.GetFirstAncestorOfType<Button>();
                 if (button?.name == "FeedbackSubmitButton") Submit(root, store);
             });

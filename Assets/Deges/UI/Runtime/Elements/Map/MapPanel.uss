@@ -8,19 +8,17 @@
 }
 .nodus-map-controls {
     position: absolute;
-    left: 26px;
-    right: 26px;
-    bottom: 22px;
-    flex-direction: row;
-    align-items: flex-end;
-    flex-wrap: wrap;
+    right: 20px;
+    top: 50%;
+    translate: 0 -50%;
+    flex-direction: column;
+    align-items: center;
 }
 .nodus-map-actions {
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    flex-shrink: 0;
 }
-.nodus-map-actions--with-panel { margin-left: 10px; }
+.nodus-map-actions--with-panel { margin-left: 0; }
 .nodus-map-icon-font {
     -unity-font-definition: url("/Assets/UI/Fonts/MaterialIcons-Regular SDF.asset");
 }
@@ -28,7 +26,7 @@
     width: 38px;
     height: 38px;
     padding: 0;
-    margin-right: 8px;
+    margin-bottom: 8px;
     background-color: var(--nodus-surface);
     color: var(--nodus-text);
     border-width: 1px;
@@ -39,10 +37,13 @@
 }
 .nodus-map-icon-button:hover { background-color: var(--nodus-primary-soft); }
 .nodus-map-panel {
-    width: 330px;
+    position: absolute;
+    left: 26px;
+    top: 108px;
+    width: 335px;
     flex-shrink: 1;
     min-width: 230px;
-    max-width: 85%;
+    max-width: 80%;
     padding: 18px;
     background-color: var(--nodus-surface);
     color: var(--nodus-text);
@@ -104,10 +105,10 @@
 .nodus-map-step { width: 40px; font-size: 25px; padding: 0; margin-left: 8px; }
 .nodus-map-info {
     position: absolute;
-    right: 26px;
-    bottom: 22px;
+    right: 96px;
+    bottom: 24px;
     width: 340px;
-    max-width: 92%;
+    max-width: 70%;
     height: auto;
     min-width: 0;
     max-height: 70%;
@@ -208,9 +209,8 @@
 .nodus-map-pin--phase.nodus-map-selected { background-color: #8558B8; }
 
 .nodus-map-info-toggle {
-    -unity-font-definition: url("/Assets/UI/Fonts/Roboto-Regular SDF.asset");
-    -unity-font-style: bold;
-    font-size: 19px;
+    -unity-font-definition: url("/Assets/UI/Fonts/MaterialIcons-Regular SDF.asset");
+    font-size: 22px;
     -unity-text-align: middle-center;
 }
 .nodus-map-info-toggle-slash {
@@ -252,4 +252,19 @@
     background-color: rgba(36, 40, 46, .92);
     color: #FFD47E;
     -unity-font-style: bold;
+}
+
+/* North is the first control in the right-side navigation stack. */
+.nodus-map-compass-control {
+    align-items: center;
+    justify-content: center;
+}
+.nodus-map-compass-arrow {
+    width: 32px;
+    height: 34px;
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+    color: #d93025;
+    -unity-text-align: middle-center;
 }

@@ -1,23 +1,49 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:loc="UnityEngine.Localization" xmlns:nodus="Nodus.UI" editor-extension-mode="False">
     <Style src="project://database/Assets/Deges/UI/Runtime/Elements/Styles.uss?fileID=7433441132597879392&amp;guid=c6b1db6856ef4f14d9bec883450fa92c&amp;type=3#Styles"/>
     <ui:VisualElement name="App" class="nodus-root">
-        <ui:VisualElement name="MapPanels" picking-mode="Ignore" class="nodus-stack"/>
+        <ui:VisualElement name="MapPanels" picking-mode="Ignore" class="nodus-stack" />
         <ui:VisualElement name="Toolbar" class="nodus-toolbar nodus-toolbar--responsive">
-            <ui:Label text="Infrastructure" class="nodus-toolbar__brand">
-                <Bindings>
-                    <loc:LocalizedString property="text" table="MainTable" entry="Project.Title"/>
-                </Bindings>
-            </ui:Label>
-            <ui:VisualElement class="nodus-toolbar__items">
-                <nodus:EntitiesButton name="BackButton" text="" entities="project://database/Packages/com.nodus.navigation/Runtime/Actions/Back.asset?fileID=11400000&amp;guid=0fa860d76b7059d3917929ff3df0a55e&amp;type=2#Back" class="nodus-button nodus-icon-button"/>
-                <nodus:EntitiesButton name="ForwardButton" text="" entities="project://database/Packages/com.nodus.navigation/Runtime/Actions/Forward.asset?fileID=11400000&amp;guid=efee0c4d38115538b57e1da7ca2eda93&amp;type=2#Forward" class="nodus-button nodus-icon-button"/>
-                <nodus:EntitiesButton name="OpenFeedbackButton" text="Feedback" entities="project://database/Assets/Deges/UI/Runtime/Elements/Feedback/OpenFeedback.asset?fileID=11400000&amp;guid=a32178f14b225f07a28ca5162196f29e&amp;type=2#OpenFeedback" class="nodus-button nodus-button--primary">
+            <ui:VisualElement name="ToolbarBrand" class="nodus-toolbar__brand-group">
+                <ui:Label text="Infrastructure" class="nodus-toolbar__brand">
                     <Bindings>
-                        <loc:LocalizedString property="text" table="MainTable" entry="Feedback"/>
+                        <loc:LocalizedString property="text" table="MainTable" entry="Project.Title"/>
                     </Bindings>
+                </ui:Label>
+            </ui:VisualElement>
+            <ui:VisualElement name="ToolbarActions" class="nodus-toolbar__items">
+                <ui:Button name="ExploreToolbarButton" class="nodus-button nodus-toolbar-action">
+                    <ui:Label text="&#xe8b6;" class="nodus-toolbar-action__icon" picking-mode="Ignore" />
+                    <ui:Label name="ExploreToolbarLabel" text="Explore" class="nodus-toolbar-action__text" picking-mode="Ignore" />
+                </ui:Button>
+                <ui:VisualElement class="nodus-toolbar-separator" picking-mode="Ignore" />
+                <ui:Button name="PhasesToolbarButton" class="nodus-button nodus-toolbar-action">
+                    <ui:Label text="&#xe869;" class="nodus-toolbar-action__icon" picking-mode="Ignore" />
+                    <ui:Label name="PhasesToolbarLabel" text="Construction phases" class="nodus-toolbar-action__text" picking-mode="Ignore" />
+                </ui:Button>
+                <ui:VisualElement class="nodus-toolbar-separator" picking-mode="Ignore" />
+                <ui:Button name="CompareToolbarButton" class="nodus-button nodus-toolbar-action">
+                    <ui:Label text="&#xe8d4;" class="nodus-toolbar-action__icon" picking-mode="Ignore" />
+                    <ui:Label name="CompareToolbarLabel" text="Before / After" class="nodus-toolbar-action__text" picking-mode="Ignore" />
+                </ui:Button>
+                <ui:VisualElement class="nodus-toolbar-separator" picking-mode="Ignore" />
+                <ui:Button name="MeasureToolbarButton" class="nodus-button nodus-toolbar-action">
+                    <ui:Label text="&#xe41c;" class="nodus-toolbar-action__icon" picking-mode="Ignore" />
+                    <ui:Label name="MeasureToolbarLabel" text="Measure" class="nodus-toolbar-action__text" picking-mode="Ignore" />
+                </ui:Button>
+                <ui:VisualElement class="nodus-toolbar-separator" picking-mode="Ignore" />
+                <nodus:EntitiesButton name="OpenFeedbackButton" entities="project://database/Assets/Deges/UI/Runtime/Elements/Feedback/OpenFeedback.asset?fileID=11400000&amp;guid=a32178f14b225f07a28ca5162196f29e&amp;type=2#OpenFeedback" class="nodus-button nodus-toolbar-action">
+                    <ui:Label text="&#xe87f;" class="nodus-toolbar-action__icon" picking-mode="Ignore" />
+                    <ui:Label text="Feedback" class="nodus-toolbar-action__text" picking-mode="Ignore">
+                        <Bindings><loc:LocalizedString property="text" table="MainTable" entry="Feedback" /></Bindings>
+                    </ui:Label>
                 </nodus:EntitiesButton>
             </ui:VisualElement>
-            <ui:VisualElement class="nodus-toolbar__settings">
+            <ui:VisualElement name="ToolbarRight" class="nodus-toolbar__right">
+                <ui:VisualElement name="ToolbarHistory" class="nodus-toolbar-history">
+                    <nodus:EntitiesButton name="BackButton" text="&#xe5c4;" entities="project://database/Packages/com.nodus.navigation/Runtime/Actions/Back.asset?fileID=11400000&amp;guid=0fa860d76b7059d3917929ff3df0a55e&amp;type=2#Back" class="nodus-button nodus-icon-button nodus-toolbar-history-button" />
+                    <nodus:EntitiesButton name="ForwardButton" text="&#xe5c8;" entities="project://database/Packages/com.nodus.navigation/Runtime/Actions/Forward.asset?fileID=11400000&amp;guid=efee0c4d38115538b57e1da7ca2eda93&amp;type=2#Forward" class="nodus-button nodus-icon-button nodus-toolbar-history-button" />
+                </ui:VisualElement>
+                <ui:VisualElement class="nodus-toolbar__settings">
                 <ui:VisualElement class="nodus-select-wrap">
                     <nodus:EntitiesDropdown name="LanguageDropdown" options="project://database/Assets/Deges/UI/Runtime/Elements/Infrastructure/Locale/LocaleOptions.asset?fileID=11400000&amp;guid=ffd7b35c14404a7985d7f31e85dfce94&amp;type=2#LocaleOptions" class="nodus-select"/>
                     <ui:Label text="" picking-mode="Ignore" class="nodus-select-icon"/>
@@ -25,6 +51,7 @@
                 <ui:VisualElement class="nodus-select-wrap nodus-select-wrap--second">
                     <nodus:EntitiesDropdown name="ThemeDropdown" options="project://database/Assets/Deges/UI/Runtime/Elements/Infrastructure/Theme/ThemeOptions.asset?fileID=11400000&amp;guid=48a8b501084b42e189ec919a9bea0edb&amp;type=2#ThemeOptions" class="nodus-select"/>
                     <ui:Label text="" picking-mode="Ignore" class="nodus-select-icon"/>
+                </ui:VisualElement>
                 </ui:VisualElement>
             </ui:VisualElement>
         </ui:VisualElement>

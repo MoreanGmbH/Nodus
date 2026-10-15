@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62a82125216747ad918281377d1b8f11, type: 3}
+  m_Name: M10Project
+  m_EditorClassIdentifier: Nodus.Maps::Nodus.Maps.MapProjectDefinition
+  Id: m10
+  Title: Oberbaumbrücke - illustrative renewal
+  Description:
+  Points:
+  - Id: old-river
+    Group: old
+    Kind: 9
+    Longitude: 13.44500000
+    Latitude: 52.50217000
+    TitleKey: Maps.Info.old-river.Title
+    DescriptionKey: Maps.Info.old-river.Description
+    Route: [13.44410000, 52.50255000, 13.44465000, 52.50229000, 13.44560000, 52.50187000]
+  - Id: old-cycle
+    Group: old
+    Kind: 4
+    Longitude: 13.44548000
+    Latitude: 52.50189000
+    TitleKey: Maps.Info.old-cycle.Title
+    DescriptionKey: Maps.Info.old-cycle.Description
+    Route: [13.44508000, 52.50145000, 13.44548000, 52.50190000, 13.44587000, 52.50230000]
+  - Id: new-cycle
+    Group: new
+    Kind: 4
+    Longitude: 13.44573000
+    Latitude: 52.50184000
+    TitleKey: Maps.Info.new-cycle.Title
+    DescriptionKey: Maps.Info.new-cycle.Description
+    Route: [13.44505000, 52.50142000, 13.44555000, 52.50194000, 13.44595000, 52.50232000]
+  - Id: new-transit
+    Group: new
+    Kind: 2
+    Longitude: 13.44598000
+    Latitude: 52.50232000
+    TitleKey: Maps.Info.new-transit.Title
+    DescriptionKey: Maps.Info.new-transit.Description
+    Route: []
+  - Id: p0-walking
+    Group: phase-0
+    Kind: 3
+    Longitude: 13.44513000
+    Latitude: 52.50145000
+    TitleKey: Maps.Info.p0-walking.Title
+    DescriptionKey: Maps.Info.p0-walking.Description
+    Route: [13.44475000, 52.50118000, 13.44505000, 52.50142000, 13.44530000, 52.50168000]
+  - Id: p0-barrier
+    Group: phase-0
+    Kind: 7
+    Longitude: 13.44568000
+    Latitude: 52.50217000
+    TitleKey: Maps.Info.p0-barrier.Title
+    DescriptionKey: Maps.Info.p0-barrier.Description
+    Route: []
+  - Id: p1-barge
+    Group: phase-1
+    Kind: 9
+    Longitude: 13.44474000
+    Latitude: 52.50220000
+    TitleKey: Maps.Info.p1-barge.Title
+    DescriptionKey: Maps.Info.p1-barge.Description
+    Route: [13.44420000, 52.50262000, 13.44460000, 52.50237000, 13.44522000, 52.50202000]
+  - Id: p1-noise
+    Group: phase-1
+    Kind: 5
+    Longitude: 13.44608000
+    Latitude: 52.50236000
+    TitleKey: Maps.Info.p1-noise.Title
+    DescriptionKey: Maps.Info.p1-noise.Description
+    Route: []
+  - Id: p2-detour
+    Group: phase-2
+    Kind: 1
+    Longitude: 13.44504000
+    Latitude: 52.50132000
+    TitleKey: Maps.Info.p2-detour.Title
+    DescriptionKey: Maps.Info.p2-detour.Description
+    Route: [13.44432000, 52.50108000, 13.44470000, 52.50133000, 13.44525000, 52.50143000, 13.44572000, 52.50170000]
+  - Id: p3-cycling
+    Group: phase-3
+    Kind: 4
+    Longitude: 13.44538000
+    Latitude: 52.50175000
+    TitleKey: Maps.Info.p3-cycling.Title
+    DescriptionKey: Maps.Info.p3-cycling.Description
+    Route: [13.44504000, 52.50143000, 13.44546000, 52.50191000, 13.44592000, 52.50228000]
+  - Id: p3-transit
+    Group: phase-3
+    Kind: 2
+    Longitude: 13.44600000
+    Latitude: 52.50241000
+    TitleKey: Maps.Info.p3-transit.Title
+    DescriptionKey: Maps.Info.p3-transit.Description
+    Route: []

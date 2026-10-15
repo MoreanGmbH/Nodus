@@ -12,43 +12,29 @@
         <ui:VisualElement name="MapPins" picking-mode="Ignore" class="nodus-map-pins" />
         <ui:VisualElement name="MeasurementLabels" picking-mode="Ignore" class="nodus-map-pins" />
         <ui:VisualElement name="MeasurementPins" picking-mode="Ignore" class="nodus-map-pins" />
-        <ui:VisualElement name="MapControls" picking-mode="Ignore" class="nodus-map-controls">
-            <ui:VisualElement name="BridgePanel" class="nodus-map-panel">
+        <ui:VisualElement name="BridgePanel" class="nodus-map-panel">
             <ui:VisualElement class="nodus-map-heading">
-                <ui:Label name="ProjectTitle" text="Bridge renewal" class="nodus-map-title" />
-                <ui:Button name="CloseBridgeButton" text="" class="nodus-map-header-close nodus-map-icon-font" />
-            </ui:VisualElement>
-            <ui:Label name="ProjectDescription" text="Explore the replacement bridge and its construction." class="nodus-map-description" />
-            <ui:VisualElement class="nodus-map-tabs">
-                <ui:Button name="CompareTabButton" text="Compare bridges" class="nodus-map-button nodus-map-tab nodus-map-tab-first" />
-                <ui:Button name="PhasesTabButton" text="Construction phases" class="nodus-map-button nodus-map-tab" />
-            </ui:VisualElement>
-            <ui:VisualElement name="CompareTab" class="nodus-map-tab-content">
-                <ui:Label name="CompareDescription" text="Drag the divider to compare the existing and new bridges." class="nodus-map-description" />
-                <ui:Slider name="ComparisonSlider" low-value="0" high-value="1" value="0.5" class="nodus-map-slider" />
-                <ui:VisualElement class="nodus-map-modes">
-                    <ui:Button name="ExistingButton" text="Existing" class="nodus-map-button nodus-map-mode" />
-                    <ui:Button name="SplitButton" text="Compare" class="nodus-map-button nodus-map-mode nodus-map-mode-middle" />
-                    <ui:Button name="NewButton" text="New" class="nodus-map-button nodus-map-mode" />
-                </ui:VisualElement>
+                <ui:Label name="ProjectTitle" text="Construction phases" class="nodus-map-title" />
+                <ui:Button name="CloseBridgeButton" text="&#xe5cd;" class="nodus-map-header-close nodus-map-icon-font" />
             </ui:VisualElement>
             <ui:VisualElement name="PhasesTab" class="nodus-map-tab-content">
                 <ui:Label name="PhaseIndex" text="Phase 1 of 4" class="nodus-map-phase-index" />
                 <ui:Label name="PhaseTitle" text="Site setup" class="nodus-map-phase-title" />
                 <ui:Label name="PhaseDescription" text="The construction site is prepared." class="nodus-map-description" />
                 <ui:VisualElement class="nodus-map-stepper">
-                    <ui:Button name="PreviousPhaseButton" text="" class="nodus-map-button nodus-map-step nodus-map-icon-font" />
-                    <ui:Button name="NextPhaseButton" text="" class="nodus-map-button nodus-map-step nodus-map-icon-font" />
+                    <ui:Button name="PreviousPhaseButton" text="&#xe5cb;" class="nodus-map-button nodus-map-step nodus-map-icon-font" />
+                    <ui:Button name="NextPhaseButton" text="&#xe5cc;" class="nodus-map-button nodus-map-step nodus-map-icon-font" />
                 </ui:VisualElement>
             </ui:VisualElement>
-            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="MapControls" picking-mode="Ignore" class="nodus-map-controls">
             <ui:VisualElement name="MapActions" class="nodus-map-actions">
-                <ui:Button name="BridgeButton" text="" class="nodus-map-icon-button nodus-map-icon-font" />
-                <ui:Button name="HomeButton" text="" class="nodus-map-icon-button nodus-map-icon-font" />
+                <ui:Button name="HomeButton" class="nodus-map-icon-button nodus-map-compass-control" tooltip="Reset map and north">
+                    <ui:Label name="CompassArrow" text="&#xe55d;" picking-mode="Ignore" class="nodus-map-compass-arrow nodus-map-icon-font" />
+                </ui:Button>
+                <ui:Button name="MapViewButton" text="&#xe3ec;" class="nodus-map-icon-button nodus-map-icon-font" />
                 <ui:Button name="SatelliteButton" text="" class="nodus-map-icon-button nodus-map-icon-font" />
-                <ui:Button name="BuildingsButton" text="" class="nodus-map-icon-button nodus-map-icon-font" />
-                <ui:Button name="MeasurementButton" text="" class="nodus-map-icon-button nodus-map-icon-font" />
-                <ui:Button name="InfoToggleButton" text="i" class="nodus-map-icon-button nodus-map-info-toggle">
+                <ui:Button name="InfoToggleButton" text="&#xe88e;" class="nodus-map-icon-button nodus-map-icon-font nodus-map-info-toggle">
                     <ui:VisualElement name="InfoToggleSlash" picking-mode="Ignore" class="nodus-map-info-toggle-slash" />
                 </ui:Button>
             </ui:VisualElement>
