@@ -86,14 +86,6 @@ MonoBehaviour:
     m_Localized: Close
     m_Metadata:
       m_Items: []
-  - m_Id: 890988158836741
-    m_Localized: Bridge renewal
-    m_Metadata:
-      m_Items: []
-  - m_Id: 890988158836742
-    m_Localized: Explore the new bridge in four construction phases.
-    m_Metadata:
-      m_Items: []
   - m_Id: 890988158836743
     m_Localized: Construction site
     m_Metadata:
@@ -266,14 +258,6 @@ MonoBehaviour:
     m_Localized: Show or hide local information
     m_Metadata:
       m_Items: []
-  - m_Id: 926187311652865
-    m_Localized: Spree boat passage
-    m_Metadata:
-      m_Items: []
-  - m_Id: 926187311652866
-    m_Localized: "Sightseeing boats pass beneath Oberbaumbr\xFCcke. The vessel marks the river corridor; clearance is illustrative."
-    m_Metadata:
-      m_Items: []
   - m_Id: 926187311652867
     m_Localized: "Cycle route at Oberbaumbr\xFCcke"
     m_Metadata:
@@ -282,75 +266,115 @@ MonoBehaviour:
     m_Localized: Cyclists connect Kreuzberg and Friedrichshain here. The line shows the existing crossing as a concept.
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235777
+  - m_Id: 1064636639404053
+    m_Localized: Show 3D buildings and map objects
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1064636639404054
+    m_Localized: Measure distance and area
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1064636639404055
+    m_Localized: Distance
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1064636639404056
+    m_Localized: Area
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1064636639404057
+    m_Localized: Close area
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1064636639404058
+    m_Localized: Clear
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1070950803365888
+    m_Localized: Bridge renewal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1070950807560192
+    m_Localized: Explore the new bridge in four construction phases.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1070950807560193
+    m_Localized: Spree boat passage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1070950807560194
+    m_Localized: "Sightseeing boats pass beneath Oberbaumbr\xFCcke. The vessel marks the river corridor; clearance is illustrative."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1070950811754496
     m_Localized: Continuous cycle connection
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235778
+  - m_Id: 1070950811754497
     m_Localized: The concept shows a clearly marked cycle connection across the bridge and its approaches.
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235779
+  - m_Id: 1070950811754498
     m_Localized: U1 and U3 above the Spree
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235780
+  - m_Id: 1070950811754499
     m_Localized: The elevated U-Bahn route stays visible in the redesigned bridge concept. Service information is not live.
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235781
+  - m_Id: 1070950811754500
     m_Localized: Pedestrian route during site setup
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235782
+  - m_Id: 1070950811754501
     m_Localized: An illustrative signed walking corridor connects the Kreuzberg-side approach with the bridge.
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235783
+  - m_Id: 1070950811754502
     m_Localized: Work-zone separation
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235784
+  - m_Id: 1070950811754503
     m_Localized: Temporary barriers would separate the construction area from the bridge approaches and public footways.
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235785
+  - m_Id: 1070950811754504
     m_Localized: Materials delivered from the Spree
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235786
+  - m_Id: 1070950811754505
     m_Localized: A work barge illustrates how some bridge components could be brought to the site by water.
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235787
+  - m_Id: 1070950811754506
     m_Localized: Noise monitoring near neighbours
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235788
+  - m_Id: 1070950811754507
     m_Localized: An example sensor on the Friedrichshain side represents measurements during foundation work.
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235789
+  - m_Id: 1070950811754508
     m_Localized: Temporary road diversion
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235790
+  - m_Id: 1070950811754509
     m_Localized: "The animated orange path illustrates a potential diversion on the Schlesische Stra\xDFe / Warschauer Stra\xDFe approaches. Not a real traffic order."
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235791
+  - m_Id: 1070950811754510
     m_Localized: Cycle connection reopened
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235792
+  - m_Id: 1070950811754511
     m_Localized: In the final illustrative stage, cyclists use a continuous marked connection across the renewed bridge.
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235793
+  - m_Id: 1070950811754512
     m_Localized: U-Bahn crossing in operation
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235794
+  - m_Id: 1070950811754513
     m_Localized: "The completed scenario retains the U1/U3 crossing between Schlesisches Tor and Warschauer Stra\xDFe."
     m_Metadata:
       m_Items: []

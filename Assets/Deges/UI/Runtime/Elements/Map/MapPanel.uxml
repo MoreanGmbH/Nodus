@@ -10,6 +10,8 @@
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="MapPins" picking-mode="Ignore" class="nodus-map-pins" />
+        <ui:VisualElement name="MeasurementLabels" picking-mode="Ignore" class="nodus-map-pins" />
+        <ui:VisualElement name="MeasurementPins" picking-mode="Ignore" class="nodus-map-pins" />
         <ui:VisualElement name="MapControls" picking-mode="Ignore" class="nodus-map-controls">
             <ui:VisualElement name="BridgePanel" class="nodus-map-panel">
             <ui:VisualElement class="nodus-map-heading">
@@ -44,6 +46,8 @@
                 <ui:Button name="BridgeButton" text="" class="nodus-map-icon-button nodus-map-icon-font" />
                 <ui:Button name="HomeButton" text="" class="nodus-map-icon-button nodus-map-icon-font" />
                 <ui:Button name="SatelliteButton" text="" class="nodus-map-icon-button nodus-map-icon-font" />
+                <ui:Button name="BuildingsButton" text="" class="nodus-map-icon-button nodus-map-icon-font" />
+                <ui:Button name="MeasurementButton" text="" class="nodus-map-icon-button nodus-map-icon-font" />
                 <ui:Button name="InfoToggleButton" text="i" class="nodus-map-icon-button nodus-map-info-toggle">
                     <ui:VisualElement name="InfoToggleSlash" picking-mode="Ignore" class="nodus-map-info-toggle-slash" />
                 </ui:Button>

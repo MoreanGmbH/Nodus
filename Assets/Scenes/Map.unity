@@ -401,6 +401,8 @@ GameObject:
   - component: {fileID: 1054022296}
   - component: {fileID: 1054022294}
   - component: {fileID: 1054022293}
+  - component: {fileID: 1054022305}
+  - component: {fileID: 1054022304}
   m_Layer: 0
   m_Name: Online Map
   m_TagString: Untagged
@@ -424,13 +426,22 @@ MonoBehaviour:
   orbit: {fileID: 1054022294}
   comparisonMaterial: {fileID: 2100000, guid: b9db15104f4f46f428a7f1185197fa6a, type: 2}
   routeMaterial: {fileID: 2100000, guid: 04690b1e8f83a324db98f20889e21c72, type: 2}
-  longitude: 13.44556
-  latitude: 52.50194
+  buildingWallMaterial: {fileID: 2100000, guid: 02d1b78a325dc8e45b693bb496e8cdea, type: 2}
+  buildingRoofMaterial: {fileID: 2100000, guid: 4025106c84fe78a42a51e7913ac7a113, type: 2}
+  buildings: {fileID: 1054022305}
+  measurement: {fileID: 1054022304}
+  details: {fileID: 0}
+  panLimitMeters: 5000
+  longitude: 13.44566
+  latitude: 52.50173
   zoom: 17
   minZoom: 14
   maxZoom: 22
-  bridgeSouthwest: {x: 13.445, y: 52.5014}
-  bridgeNortheast: {x: 13.4461, y: 52.5025}
+  bridgeSouthwest: {x: 13.444867, y: 52.501274}
+  bridgeNortheast: {x: 13.446453, y: 52.502186}
+  bridgeWidthScale: 0.38
+  bridgeHeadingCorrection: -8
+  buildingRequestRadiusMeters: 450
 --- !u!114 &1054022294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -493,10 +504,10 @@ MonoBehaviour:
     _countTilesX: 8
     _countTilesY: 8
     _height: 2048
-    _latitude: 52.50194
-    _longitude: 13.44556
+    _latitude: 52.50173
+    _longitude: 13.44566
     _width: 2048
-    _zoom: 18.5
+    _zoom: 17
 --- !u!114 &1054022296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -637,6 +648,54 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1054022304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054022292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec95795e6c5049a8a567e7359c8b627a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Nodus.Maps::Nodus.Maps.MapMeasure
+  map: {fileID: 1054022295}
+  fillMaterial: {fileID: 2100000, guid: 4f07d2c2610229c4daeb07477c512151, type: 2}
+--- !u!114 &1054022305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054022292}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 950ee17c19f816a49bd815a7b0b2be7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: OnlineMaps::OnlineMaps.Buildings
+  levelsRange:
+    max: 7
+    min: 3
+    maxLimit: 100
+    minLimit: 1
+  levelHeight: 4.5
+  generateColliders: 0
+  heightScale: 1
+  materials:
+  - wall: {fileID: 2100000, guid: 02d1b78a325dc8e45b693bb496e8cdea, type: 2}
+    roof: {fileID: 2100000, guid: 4025106c84fe78a42a51e7913ac7a113, type: 2}
+    scale: {x: 1, y: 1}
+  maxActiveBuildings: 250
+  maxBuilding: 350
+  minHeight: 4.5
+  useColorTag: 0
+  useHeightTag: 1
+  zoomRange:
+    max: 22
+    min: 16
+    maxLimit: 20.999
+    minLimit: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -83,11 +83,11 @@ MonoBehaviour:
     m_Key: Maps.Close
     m_Metadata:
       m_Items: []
-  - m_Id: 890988158836741
+  - m_Id: 1070950803365888
     m_Key: Maps.POI.Bridge
     m_Metadata:
       m_Items: []
-  - m_Id: 890988158836742
+  - m_Id: 1070950807560192
     m_Key: Maps.POI.Bridge.Detail
     m_Metadata:
       m_Items: []
@@ -263,11 +263,11 @@ MonoBehaviour:
     m_Key: Maps.InfosToggle
     m_Metadata:
       m_Items: []
-  - m_Id: 926187311652865
+  - m_Id: 1070950807560193
     m_Key: Maps.Info.old-river.Title
     m_Metadata:
       m_Items: []
-  - m_Id: 926187311652866
+  - m_Id: 1070950807560194
     m_Key: Maps.Info.old-river.Description
     m_Metadata:
       m_Items: []
@@ -279,76 +279,100 @@ MonoBehaviour:
     m_Key: Maps.Info.old-cycle.Description
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235777
+  - m_Id: 1070950811754496
     m_Key: Maps.Info.new-cycle.Title
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235778
+  - m_Id: 1070950811754497
     m_Key: Maps.Info.new-cycle.Description
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235779
+  - m_Id: 1070950811754498
     m_Key: Maps.Info.new-transit.Title
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235780
+  - m_Id: 1070950811754499
     m_Key: Maps.Info.new-transit.Description
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235781
+  - m_Id: 1070950811754500
     m_Key: Maps.Info.p0-walking.Title
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235782
+  - m_Id: 1070950811754501
     m_Key: Maps.Info.p0-walking.Description
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235783
+  - m_Id: 1070950811754502
     m_Key: Maps.Info.p0-barrier.Title
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235784
+  - m_Id: 1070950811754503
     m_Key: Maps.Info.p0-barrier.Description
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235785
+  - m_Id: 1070950811754504
     m_Key: Maps.Info.p1-barge.Title
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235786
+  - m_Id: 1070950811754505
     m_Key: Maps.Info.p1-barge.Description
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235787
+  - m_Id: 1070950811754506
     m_Key: Maps.Info.p1-noise.Title
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235788
+  - m_Id: 1070950811754507
     m_Key: Maps.Info.p1-noise.Description
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235789
+  - m_Id: 1070950811754508
     m_Key: Maps.Info.p2-detour.Title
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235790
+  - m_Id: 1070950811754509
     m_Key: Maps.Info.p2-detour.Description
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235791
+  - m_Id: 1070950811754510
     m_Key: Maps.Info.p3-cycling.Title
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235792
+  - m_Id: 1070950811754511
     m_Key: Maps.Info.p3-cycling.Description
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235793
+  - m_Id: 1070950811754512
     m_Key: Maps.Info.p3-transit.Title
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235794
+  - m_Id: 1070950811754513
     m_Key: Maps.Info.p3-transit.Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1064636639404053
+    m_Key: Maps.Buildings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1064636639404054
+    m_Key: Maps.Measure
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1064636639404055
+    m_Key: Maps.Measure.Distance
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1064636639404056
+    m_Key: Maps.Measure.Area
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1064636639404057
+    m_Key: Maps.Measure.Close
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1064636639404058
+    m_Key: Maps.Measure.Clear
     m_Metadata:
       m_Items: []
   m_Metadata:

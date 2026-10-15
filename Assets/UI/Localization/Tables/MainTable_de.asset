@@ -86,14 +86,6 @@ MonoBehaviour:
     m_Localized: "Schlie\xDFen"
     m_Metadata:
       m_Items: []
-  - m_Id: 890988158836741
-    m_Localized: "Br\xFCckenerneuerung"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 890988158836742
-    m_Localized: "Entdecken Sie den Neubau der Br\xFCcke in vier Bauphasen."
-    m_Metadata:
-      m_Items: []
   - m_Id: 890988158836743
     m_Localized: Baustelle
     m_Metadata:
@@ -266,14 +258,6 @@ MonoBehaviour:
     m_Localized: Informationen ein- oder ausblenden
     m_Metadata:
       m_Items: []
-  - m_Id: 926187311652865
-    m_Localized: Schiffsverkehr auf der Spree
-    m_Metadata:
-      m_Items: []
-  - m_Id: 926187311652866
-    m_Localized: "Ausflugsschiffe passieren die Oberbaumbr\xFCcke. Das Schiff kennzeichnet die Fahrrinne; die Durchfahrtsh\xF6he ist schematisch."
-    m_Metadata:
-      m_Items: []
   - m_Id: 926187311652867
     m_Localized: "Radverkehr an der Oberbaumbr\xFCcke"
     m_Metadata:
@@ -282,75 +266,115 @@ MonoBehaviour:
     m_Localized: Hier verbindet der Radverkehr Kreuzberg mit Friedrichshain. Die Linie veranschaulicht die bisherige Querung.
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235777
+  - m_Id: 1064636639404053
+    m_Localized: "3D-Geb\xE4ude und Kartenobjekte anzeigen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1064636639404054
+    m_Localized: "Entfernung und Fl\xE4che messen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1064636639404055
+    m_Localized: Entfernung
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1064636639404056
+    m_Localized: "Fl\xE4che"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1064636639404057
+    m_Localized: "Fl\xE4che schlie\xDFen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1064636639404058
+    m_Localized: "L\xF6schen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1070950803365888
+    m_Localized: "Br\xFCckenerneuerung"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1070950807560192
+    m_Localized: "Entdecken Sie den Neubau der Br\xFCcke in vier Bauphasen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1070950807560193
+    m_Localized: Schiffsverkehr auf der Spree
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1070950807560194
+    m_Localized: "Ausflugsschiffe passieren die Oberbaumbr\xFCcke. Das Schiff kennzeichnet die Fahrrinne; die Durchfahrtsh\xF6he ist schematisch."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1070950811754496
     m_Localized: Durchgehende Radverbindung
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235778
+  - m_Id: 1070950811754497
     m_Localized: "Das Konzept zeigt eine klar gekennzeichnete Radverbindung \xFCber die Br\xFCcke und ihre Zufahrten."
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235779
+  - m_Id: 1070950811754498
     m_Localized: "U1 und U3 \xFCber der Spree"
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235780
+  - m_Id: 1070950811754499
     m_Localized: Die Hochbahntrasse bleibt im Entwurf sichtbar. Dies sind keine aktuellen Verkehrsmeldungen.
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235781
+  - m_Id: 1070950811754500
     m_Localized: "Fu\xDFweg w\xE4hrend der Einrichtung"
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235782
+  - m_Id: 1070950811754501
     m_Localized: "Ein beispielhaft ausgeschilderter Fu\xDFweg verbindet die Kreuzberger Seite mit der Br\xFCcke."
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235783
+  - m_Id: 1070950811754502
     m_Localized: Abgrenzung der Baustelle
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235784
+  - m_Id: 1070950811754503
     m_Localized: "Tempor\xE4re Absperrungen trennen im Beispiel die Baufl\xE4che von Br\xFCckenzufahrten und Gehwegen."
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235785
+  - m_Id: 1070950811754504
     m_Localized: "Materialanlieferung \xFCber die Spree"
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235786
+  - m_Id: 1070950811754505
     m_Localized: "Ein Arbeitsschiff zeigt, wie Br\xFCckenbauteile \xFCber den Wasserweg angeliefert werden k\xF6nnten."
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235787
+  - m_Id: 1070950811754506
     m_Localized: "L\xE4rmmessungen in der Nachbarschaft"
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235788
+  - m_Id: 1070950811754507
     m_Localized: "Ein beispielhafter Messpunkt auf Friedrichshainer Seite steht f\xFCr L\xE4rmkontrollen bei Gr\xFCndungsarbeiten."
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235789
+  - m_Id: 1070950811754508
     m_Localized: "Tempor\xE4re Verkehrsf\xFChrung"
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235790
+  - m_Id: 1070950811754509
     m_Localized: "Die animierte orange Linie zeigt eine m\xF6gliche Umleitung im Bereich Schlesische Stra\xDFe und Warschauer Stra\xDFe. Keine reale Verkehrsregelung."
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235791
+  - m_Id: 1070950811754510
     m_Localized: Radverbindung wieder offen
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235792
+  - m_Id: 1070950811754511
     m_Localized: In der letzten beispielhaften Phase nutzen Radfahrende wieder eine durchgehend markierte Verbindung.
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235793
+  - m_Id: 1070950811754512
     m_Localized: U-Bahn-Verbindung in Betrieb
     m_Metadata:
       m_Items: []
-  - m_Id: 926187324235794
+  - m_Id: 1070950811754513
     m_Localized: "Die fertige Konzeptvariante erh\xE4lt die U1/U3-Verbindung zwischen Schlesischem Tor und Warschauer Stra\xDFe."
     m_Metadata:
       m_Items: []

@@ -83,3 +83,9 @@ Maps.Info.p3-cycling.Title,0,Cycle connection reopened,Radverbindung wieder offe
 Maps.Info.p3-cycling.Description,0,"In the final illustrative stage, cyclists use a continuous marked connection across the renewed bridge.",In der letzten beispielhaften Phase nutzen Radfahrende wieder eine durchgehend markierte Verbindung.
 Maps.Info.p3-transit.Title,0,U-Bahn crossing in operation,U-Bahn-Verbindung in Betrieb
 Maps.Info.p3-transit.Description,0,The completed scenario retains the U1/U3 crossing between Schlesisches Tor and Warschauer Straße.,Die fertige Konzeptvariante erhält die U1/U3-Verbindung zwischen Schlesischem Tor und Warschauer Straße.
+Maps.Buildings,0,Show 3D buildings and map objects,3D-Gebäude und Kartenobjekte anzeigen
+Maps.Measure,0,Measure distance and area,Entfernung und Fläche messen
+Maps.Measure.Distance,0,Distance,Entfernung
+Maps.Measure.Area,0,Area,Fläche
+Maps.Measure.Close,0,Close area,Fläche schließen
+Maps.Measure.Clear,0,Clear,Löschen
